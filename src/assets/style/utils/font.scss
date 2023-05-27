@@ -1,0 +1,39 @@
+@use "mixins";
+
+@import "colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap");
+
+h1 {
+  @include mixins.generate-font("Prompt", bold, 2.7rem);
+  @extend .dark-gray;
+}
+
+h2 {
+  @include mixins.generate-font("Prompt", bold, 2.2rem);
+  @extend .dark-gray;
+}
+
+h3 {
+  @include mixins.generate-font("Prompt", bold, 2rem);
+  @extend .dark-gray;
+}
+
+h4 {
+  @include mixins.generate-font("Prompt", bold, 1.7rem);
+  @extend .gray;
+}
+
+h5 {
+  @include mixins.generate-font("Prompt", bold, 1.5rem);
+  @extend .gray;
+}
+
+h6 {
+  @include mixins.generate-font("Prompt", bold, 1.3rem);
+  @extend .gray;
+}
+
+p {
+  @include mixins.generate-font("Prompt", normal, 1.1rem);
+  @extend .light-gray;
+}
