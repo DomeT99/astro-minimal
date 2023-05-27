@@ -37,3 +37,18 @@ p {
   @include mixins.generate-font("Prompt", normal, 1.1rem);
   @extend .light-gray;
 }
+
+//Size
+.f-size-17{
+  font-size: 1.7rem !important;
+}
+
+//Weight
+.f-600{
+  font-weight: 600 !important;
+}
+
+//Global
+*{
+  @include mixins.generate-font("Prompt", normal, 1.1rem);
+}
