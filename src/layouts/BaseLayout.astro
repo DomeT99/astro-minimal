@@ -1,5 +1,6 @@
 ---
 import Navbar from "../components/common/Navbar.vue";
+import Footer from "../components/common/Footer.astro";
 import "../assets/style/main.scss";
 
 export interface Props {
@@ -20,7 +21,10 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Navbar client:load/>
-    <slot />
+    <Navbar client:load />
+    <section class="min-100-vh">
+      <slot />
+    </section>
+    <Footer />
   </body>
 </html>

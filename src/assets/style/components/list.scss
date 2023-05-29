@@ -1,0 +1,11 @@
+.content {
+  ul {
+    list-style: none;
+    margin-left: inherit;
+    margin-top: inherit;
+  }
+
+  li + li {
+    margin-top: auto;
+  }
+}

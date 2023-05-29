@@ -1,11 +1,13 @@
 @use "../utils/colors.scss" as colors;
 
 .navbar {
-  padding: 15px;
   .navbar-item:hover,
   .navbar-item:focus,
   .navbar-item:active {
     background-color: colors.$white;
     color: colors.$orange;
+  }
+  .navbar-menu{
+    box-shadow: none;
   }
 }

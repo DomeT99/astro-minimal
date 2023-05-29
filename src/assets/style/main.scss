@@ -5,8 +5,10 @@
 @import "./utils/font.scss";
 @import "./utils/mixins.scss";
 @import "./utils/colors.scss";
-
+@import "./utils/layout.scss";
 
 //Components
 @import "./components/navbar.scss";
 @import "./components/button.scss";
+@import "./components/footer.scss";
+@import "./components/list.scss";

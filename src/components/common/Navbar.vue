@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted } from "vue";
 
 function openBurger() {
   const $navbarBurgers = Array.prototype.slice.call(
@@ -26,7 +26,7 @@ onMounted(() => {
 
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
+    <div class="navbar-brand mt-4 mb-2">
       <a class="navbar-item" href="/">
         <p class="f-size-17">DOMENICO TENACE</p>
       </a>
@@ -44,7 +44,7 @@ onMounted(() => {
       </a>
     </div>
 
-    <div id="navbar-id" class="navbar-menu">
+    <div id="navbar-id" class="navbar-menu mt-4 mb-2">
       <div class="navbar-end">
         <a href="/about" class="navbar-item f-600">ABOUT</a>
         <a href="/blog" class="navbar-item f-600"> BLOG</a>
