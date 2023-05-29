@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { onMounted, ref } from "vue";
 
 function openBurger() {
   const $navbarBurgers = Array.prototype.slice.call(
@@ -20,8 +20,8 @@ function openBurger() {
 }
 
 onMounted(() => {
-    openBurger();
-})
+  openBurger();
+});
 </script>
 
 <template>
@@ -46,9 +46,15 @@ onMounted(() => {
 
     <div id="navbar-id" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item f-600">ABOUT</a>
-        <a class="navbar-item f-600"> BLOG</a>
-        <a class="navbar-item f-600"> OPEN SOURCE</a>
+        <a href="/about" class="navbar-item f-600">ABOUT</a>
+        <a href="/blog" class="navbar-item f-600"> BLOG</a>
+        <a href="/blog" class="navbar-item f-600"> PROJECTS</a>
+        <a href="/opensource" class="navbar-item f-600">OPEN SOURCE</a>
+        <div class="navbar-item">
+          <div class="buttons">
+            <button class="button is-rounded">☀️</button>
+          </div>
+        </div>
       </div>
     </div>
   </nav>

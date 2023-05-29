@@ -1,0 +1,13 @@
+@use "../utils/colors.scss" as colors;
+
+.button {
+  &.is-rounded {
+    border: none;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  &.button:focus {
+    box-shadow: 0 0 0 0.125em colors.$light-orange;
+  }
+}
