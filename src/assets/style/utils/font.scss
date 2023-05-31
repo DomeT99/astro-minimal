@@ -38,6 +38,12 @@ p {
   @extend .light-gray;
 }
 
+a{
+
+  @include mixins.generate-font("Prompt", normal, 1.1rem);
+  @extend .light-gray;
+}
+
 //Size
 .f-size-17{
   font-size: 1.7rem !important;

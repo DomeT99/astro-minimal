@@ -1,5 +1,7 @@
 ---
 import SocialBar from "../utils/SocialBar.astro";
+
+const year = new Date().getFullYear();
 ---
 
 <footer class="footer">
@@ -8,11 +10,8 @@ import SocialBar from "../utils/SocialBar.astro";
       <SocialBar />
     </div>
     <p>
-      Released under the
-      <a
-        class="dark-orange"
-        href="https://github.com/DomeT99/my-website/blob/master/LICENSE"
-        >MIT License</a
+      <a href="https://linktr.ee/domenicotenace"
+        >© Domenico Tenace {year}</a
       >.
     </p>
   </div>

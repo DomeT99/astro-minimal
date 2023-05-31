@@ -1,0 +1,66 @@
+---
+import { menuOptions } from "../../utils/variables";
+---
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand mt-4 mb-2">
+    <a class="navbar-item" href="/">
+      <p class="f-size-17">DOMENICO TENACE</p>
+    </a>
+
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbar-id"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbar-id" class="navbar-menu mt-4 mb-2">
+    <div class="navbar-end">
+      {
+        menuOptions.map((option) => {
+          return (
+            <a href={option.url} class="navbar-item f-600">
+              {option.label}
+            </a>
+          );
+        })
+      }
+      <div class="navbar-item">
+        <div class="buttons">
+          <button class="button is-rounded">☀️</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  function openBurger() {
+    const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll(".navbar-burger"),
+      0
+    );
+
+    $navbarBurgers.forEach((element) => {
+      element.addEventListener("click", () => {
+        const target = element.dataset.target;
+        const $target = document.getElementById(target) as HTMLElement;
+
+        element.classList.toggle("is-active");
+
+        $target!.classList.toggle("is-active");
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    openBurger();
+  });
+</script>
