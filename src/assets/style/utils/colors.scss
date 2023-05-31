@@ -7,20 +7,19 @@ $light-gray: #3d3d3d;
 $black: #000;
 $white: #fff;
 
-
 //Color
-.dark-gray{
-  color: $dark-gray;
+.dark-gray {
+  color: $dark-gray !important;
 }
 
 .gray {
-  color: $gray;
+  color: $gray !important;
 }
 
 .light-gray {
-  color: $light-gray;
+  color: $light-gray !important;
 }
 
-.dark-orange{
-  color: $dark-orange;
+.dark-orange {
+  color: $dark-orange !important;
 }
