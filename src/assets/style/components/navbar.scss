@@ -5,7 +5,7 @@
   .navbar-item:focus,
   .navbar-item:active {
     background-color: colors.$white;
-    color: colors.$orange;
+    color: colors.$orange !important;
   }
   .navbar-menu {
     box-shadow: none;
