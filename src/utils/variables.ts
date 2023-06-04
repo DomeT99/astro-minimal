@@ -1,4 +1,4 @@
-import { SocialButton, MenuOptions } from "../types/types";
+import { SocialButton, MenuOptions, PageData } from "../types/types";
 
 export const socialButtons: SocialButton[] = [
   {
@@ -29,3 +29,13 @@ export const menuOptions: MenuOptions[] = [
     url: "/opensource",
   },
 ];
+
+export const indexData: PageData = {
+  title: "Software Developer",
+  description: "Hi nice to meet you! I'm Domenico and I'm a Software Developer."
+}
+
+export const openSourceData: PageData = {
+  title: "Open Source",
+  description: "Some Open Source projects that I've contributed!"
+}
