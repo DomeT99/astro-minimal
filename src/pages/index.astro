@@ -1,11 +1,21 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Hero from "../components/index/Hero.astro";
+import Hero from "../components/common/Hero.astro";
 ---
 
 <BaseLayout
   title="Software Developer"
   description="Hi nice to meet you! I'm Domenico and I'm a Software Developer."
 >
-  <Hero />
+  <div class="column is-6">
+    <Hero
+      title="Hello I'm Domenico! 👋"
+      titleSize="is-size-2"
+      titleSizeMobile="is-size-2"
+      subtitle="Software developer passionate about the IT world and everything related to it. I write technical articles to share my experiences and knowledge."
+      subtitleSize="is-size-4"
+      subtitleSizeMobile="is-size-5"
+      size="is-medium"
+    />
+  </div>
 </BaseLayout>
