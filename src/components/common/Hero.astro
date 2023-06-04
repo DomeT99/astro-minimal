@@ -1,0 +1,51 @@
+---
+type Size =
+  | "is-small"
+  | "is-medium"
+  | "is-large"
+  | "is-halfheight"
+  | "is-fullheight";
+
+type TextSize =
+  | "is-size-1"
+  | "is-size-2"
+  | "is-size-3"
+  | "is-size-4"
+  | "is-size-5"
+  | "is-size-6"
+  | "is-size-7";
+
+export interface Props {
+  title: string;
+  titleSize?: TextSize;
+  titleSizeMobile?: TextSize;
+  subtitle: string;
+  subtitleSize?: TextSize;
+  subtitleSizeMobile?: TextSize;
+  size?: Size;
+}
+
+const {
+  title,
+  titleSize = "is-size-3",
+  titleSizeMobile = "is-size-4",
+  subtitle,
+  subtitleSize = "is-size-5",
+  subtitleSizeMobile = "is-size-6",
+  size = "is-small",
+} = Astro.props;
+---
+
+<section class:list={["hero", size]}>
+  <div class="hero-body">
+    <h1
+      class:list={["title", titleSize, titleSizeMobile + "-mobile"]}
+      class="title"
+    >
+      {title}
+    </h1>
+    <p class:list={["subtitle", subtitleSize, subtitleSizeMobile + "-mobile"]}>
+      {subtitle}
+    </p>
+  </div>
+</section>
