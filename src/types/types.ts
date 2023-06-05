@@ -6,12 +6,12 @@ export type SocialButton = {
 export type MenuOptions = {
   label: string;
   url: string;
-}
+};
 
 export type PageData = {
   title: string;
   description: string;
-}
+};
 
 export type Size =
   | "is-small"
@@ -28,3 +28,12 @@ export type TextSize =
   | "is-size-5"
   | "is-size-6"
   | "is-size-7";
+
+export type LatestArticles = {
+  image?: string;
+  placeholder?: string;
+  title?: string;
+  url?: string;
+  description?: string;
+  date: string;
+};

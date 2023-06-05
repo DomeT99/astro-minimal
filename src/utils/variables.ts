@@ -1,4 +1,9 @@
-import { SocialButton, MenuOptions, PageData } from "../types/types";
+import {
+  SocialButton,
+  MenuOptions,
+  PageData,
+  LatestArticles,
+} from "../types/types";
 
 export const socialButtons: SocialButton[] = [
   {
@@ -32,10 +37,50 @@ export const menuOptions: MenuOptions[] = [
 
 export const indexData: PageData = {
   title: "Software Developer",
-  description: "Hi nice to meet you! I'm Domenico and I'm a Software Developer."
-}
+  description:
+    "Hi nice to meet you! I'm Domenico and I'm a Software Developer.",
+};
 
 export const openSourceData: PageData = {
   title: "Open Source",
-  description: "Some Open Source projects that I've contributed!"
-}
+  description: "Some Open Source projects that I've contributed!",
+};
+
+export const latestArticles: LatestArticles[] = [
+  {
+    image: "https://picsum.photos/200/300",
+    placeholder: "Daje",
+    title: "Scaffolding a Vue 3 project using create-vue ⚡️",
+    url: "/opensource",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ratione, necessitatibus quidem laborum mollitia molestiae ducimus perferendis veniam autem eveniet quae! Rem sit accusantium ipsa magnam odio eaque debitis atque.",
+    date: "01-01-2022",
+  },
+  {
+    image: "https://picsum.photos/200/300",
+    placeholder: "Daje",
+    title: "Scaffolding a Vue 3 project using create-vue ⚡️",
+    url: "/opensource",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ratione, necessitatibus quidem laborum mollitia molestiae ducimus perferendis veniam autem eveniet quae! Rem sit accusantium ipsa magnam odio eaque debitis atque.",
+    date: "01-01-2022",
+  },
+  {
+    image: "https://picsum.photos/200/300",
+    placeholder: "Daje",
+    title: "Scaffolding a Vue 3 project using create-vue ⚡️",
+    url: "/opensource",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ratione, necessitatibus quidem laborum mollitia molestiae ducimus perferendis veniam autem eveniet quae! Rem sit accusantium ipsa magnam odio eaque debitis atque.",
+    date: "01-01-2022",
+  },
+  {
+    image: "https://picsum.photos/200/300",
+    placeholder: "Daje",
+    title: "Scaffolding a Vue 3 project using create-vue ⚡️",
+    url: "/opensource",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ratione, necessitatibus quidem laborum mollitia molestiae ducimus perferendis veniam autem eveniet quae! Rem sit accusantium ipsa magnam odio eaque debitis atque.",
+    date: "01-01-2022",
+  },
+];

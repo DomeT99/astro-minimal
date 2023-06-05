@@ -1,26 +1,32 @@
 ---
+interface Props {
+  image?: string;
+  placeholder?: string;
+  title?: string;
+  url?: string;
+  description?: string;
+  date: string;
+}
+
+const { image, placeholder, title, url, description, date } = Astro.props;
 ---
 
 <div class="card">
   <div class="card-image">
     <figure class="image is-16by9">
-      <img
-        src="https://picsum.photos/200/300"
-        alt="Placeholder image"
-      />
+      <img src={image} alt={placeholder} />
     </figure>
   </div>
   <header class="card-header">
-    <h5 class="card-header-title light-gray">Card header</h5>
+    <a href={url}><h5 class="card-header-title light-gray">{title}</h5></a>
   </header>
 
   <div class="card-content">
     <div class="content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-      iaculis mauris. <a>@bulmaio</a>.
-      <a href="#">#css</a>
-      <a href="#">#responsive</a>
+      {description}
+      <div class="mt-4">
+        <time>{date}</time>
+      </div>
     </div>
   </div>
-
 </div>

@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/common/Hero.astro";
 import Card from "../components/common/Card.astro";
 
-import { indexData } from "../utils/variables";
+import { indexData, latestArticles } from "../utils/variables";
 
 const { title, description } = indexData;
 ---
@@ -22,25 +22,26 @@ const { title, description } = indexData;
   </section>
 
   <section class="m-6">
-    <h2 class="light-gray">Latest Article</h2>
+    <h2 class="light-gray">Latest Articles</h2>
     <a href="/blog">Read all my articles 👉</a>
     <div class="mt-6">
       <div class="columns is-desktop">
-        <div class="column is-3-desktop is-12-tablet">
-          <Card />
-        </div>
-
-        <div class="column is-3-desktop is-12-tablet">
-          <Card />
-        </div>
-
-        <div class="column is-3-desktop is-12-tablet">
-          <Card />
-        </div>
-
-        <div class="column is-3-desktop is-12-tablet">
-          <Card />
-        </div>
+        {
+          latestArticles.map((article) => {
+            return (
+              <div class="column is-3-desktop is-12-tablet">
+                <Card
+                  image={article.image}
+                  title={article.title}
+                  placeholder={article.placeholder}
+                  url={article.url}
+                  description={article.description}
+                  date={article.date}
+                />
+              </div>
+            );
+          })
+        }
       </div>
     </div>
   </section>
