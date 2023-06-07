@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/common/Hero.astro";
+import GitCard from "../components/opensource/GitCard.astro";
 
 import { openSourceData } from "../utils/variables";
 
@@ -10,5 +11,25 @@ const { title, description } = openSourceData;
 <BaseLayout title={title} description={description}>
   <section class="has-text-centered mt-6">
     <Hero title="Open Source" subtitle="Some projects that I've contributed" />
+  </section>
+  <section class="columns is-multiline mx-auto mt-6 mb-6">
+    <div class="column is-one-third">
+      <GitCard />
+    </div>
+    <div class="column is-one-third">
+      <GitCard />
+    </div>
+    <div class="column is-one-third">
+      <GitCard />
+    </div>
+    <div class="column is-one-third">
+      <GitCard />
+    </div>
+    <div class="column is-one-third">
+      <GitCard />
+    </div>
+    <div class="column is-one-third">
+      <GitCard />
+    </div>
   </section>
 </BaseLayout>
