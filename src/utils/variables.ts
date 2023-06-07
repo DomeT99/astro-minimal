@@ -46,6 +46,11 @@ export const openSourceData: PageData = {
   description: "Some Open Source projects that I've contributed!",
 };
 
+export const projectsData:PageData = {
+  title: "Projects",
+  description: "Some projects that I've build!",
+}
+
 export const latestArticles: LatestArticles[] = [
   {
     image: "https://picsum.photos/200/300",

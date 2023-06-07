@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/common/Hero.astro";
+
+import { projectsData } from "../utils/variables";
+
+const { title, description } = projectsData;
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="has-text-centered mt-6">
+    <Hero title="Projects" subtitle="Some projects that I've build!" />
+  </section>
+</BaseLayout>
