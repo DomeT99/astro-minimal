@@ -73,7 +73,7 @@ export const latestArticles: LatestArticles[] = [
   {
     image: "https://picsum.photos/200/300",
     placeholder: "Daje",
-    title: "Scaffolding a Vue 3 project using create-vue ⚡️",
+    title: "Scaffolding a Vue 3 project using create-vue e create-react-app e npx e .NET Core ⚡️",
     url: "/opensource",
     description:
       " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ratione, necessitatibus quidem laborum mollitia molestiae ducimus perferendis veniam autem eveniet quae! Rem sit accusantium ipsa magnam odio eaque debitis atque.",
@@ -87,5 +87,5 @@ export const latestArticles: LatestArticles[] = [
     description:
       " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ratione, necessitatibus quidem laborum mollitia molestiae ducimus perferendis veniam autem eveniet quae! Rem sit accusantium ipsa magnam odio eaque debitis atque.",
     date: "01-01-2022",
-  },
+  }
 ];
