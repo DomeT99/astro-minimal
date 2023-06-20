@@ -1,9 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Hero from "../components/common/Hero.astro";
-import Card from "../components/common/Card.astro";
-
-import { latestArticles } from "../utils/variables";
+import PHero from "../components/projects/PHero.astro";
+import PProjects from "../components/projects/PProjects.astro";
 
 import { projectsData } from "../utils/variables";
 
@@ -11,35 +9,6 @@ const { title, description } = projectsData;
 ---
 
 <BaseLayout title={title} description={description}>
-  <section class="has-text-centered mt-6">
-    <Hero
-      title="Projects"
-      titleSize="is-size-1"
-      titleSizeMobile="is-size-2"
-      subtitle="Some projects that I've build!"
-      subtitleSize="is-size-4"
-      subtitleSizeMobile="is-size-5"
-    />
-  </section>
-
-  <section class="m-6">
-    <div class="columns is-multiline is-desktop">
-      {
-        latestArticles.map((article) => {
-          return (
-            <div class="column is-6-desktop is-12-tablet">
-              <Card
-                image={article.image}
-                title={article.title}
-                placeholder={article.placeholder}
-                url={article.url}
-                description={article.description}
-                date={article.date}
-              />
-            </div>
-          );
-        })
-      }
-    </div>
-  </section>
+  <PHero />
+  <PProjects />
 </BaseLayout>
