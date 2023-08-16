@@ -1,6 +1,7 @@
 @use "../utils/colors.scss" as colors;
 
 .button {
+  transition: all .3s ease;
   &.is-rounded {
     border: none;
     padding-left: 12px;
@@ -9,5 +10,25 @@
   
   &.button:focus {
     box-shadow: 0 0 0 0.125em colors.$light-orange;
+  }
+
+  &.is-primary {
+    background-color: colors.$orange;
+    &.is-light {
+      background-color: colors.$white;
+      color: colors.$orange;
+      border: 1px solid colors.$orange;
+    }
+
+    &.is-primary:hover {
+      background-color: colors.$white;
+      color: colors.$orange;
+      border: 1px solid colors.$orange;
+      &.is-light:hover {
+        background-color: colors.$light-orange;
+        color: colors.$white;
+        border: 1px solid colors.$white;
+      }
+    }
   }
 }

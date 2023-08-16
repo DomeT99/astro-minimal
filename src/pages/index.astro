@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/common/Hero.astro";
-import Card from "../components/common/Card.astro";
+import Button from "../components/common/Button.astro";
 
-import { indexData, latestArticles } from "../utils/variables";
+import { indexData } from "../utils/variables";
 
 const { title, description } = indexData;
 ---
@@ -18,31 +18,22 @@ const { title, description } = indexData;
       subtitleSize="is-size-3"
       subtitleSizeMobile="is-size-5"
       size="is-large"
-    />
-  </section>
-
-  <section class="mb-6 mt-6 mr-2 ml-2">
-    <h2 class="dark-gray ">Latest Articles</h2>
-    <a class="light-gray" href="/blog">Read all my articles 👉</a>
-    <div class="mt-6">
-      <div class="columns is-desktop">
-        {
-          latestArticles.map((article) => {
-            return (
-              <div class="column is-3-desktop is-12-tablet">
-                <Card
-                  image={article.image}
-                  title={article.title}
-                  placeholder={article.placeholder}
-                  url={article.url}
-                  description={article.description}
-                  date={article.date}
-                />
-              </div>
-            );
-          })
-        }
+    >
+      <div class="columns">
+        <div class="column is-6-desktop">
+          <a href="/blog"><Button size="is-large" label="Read my blog" /></a
+          >
+        </div>
+        <div class="column is-6-desktop">
+          <a href="/opensource"
+            ><Button
+              size="is-large"
+              bgColor="is-primary is-light"
+              label="Open Source"
+            /></a
+          >
+        </div>
       </div>
-    </div>
+    </Hero>
   </section>
 </BaseLayout>
