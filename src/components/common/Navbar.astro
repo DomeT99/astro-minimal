@@ -3,9 +3,9 @@ import { menuOptions } from "../../utils/variables";
 ---
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand mt-4 mb-2">
+  <div class="navbar-brand mt-4 mb-2 ml-2">
     <a class="navbar-item" href="/">
-      <p class="is-size-3 is-size-5-mobile dark-gray ">DOMENICO TENACE</p>
+      <p class="is-size-3 is-size-5-mobile dark-gray">DOMENICO TENACE</p>
     </a>
 
     <a
@@ -22,7 +22,7 @@ import { menuOptions } from "../../utils/variables";
   </div>
 
   <div id="navbar-id" class="navbar-menu mt-4 mb-2">
-    <div class="navbar-end">
+    <div class="navbar-end mr-4">
       {
         menuOptions.map((option) => {
           return (
@@ -32,11 +32,6 @@ import { menuOptions } from "../../utils/variables";
           );
         })
       }
-      <div class="navbar-item">
-        <div class="buttons">
-          <button class="button is-rounded">☀️</button>
-        </div>
-      </div>
     </div>
   </div>
 </nav>

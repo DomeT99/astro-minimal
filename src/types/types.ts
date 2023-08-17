@@ -28,12 +28,3 @@ export type TextSize =
   | "is-size-5"
   | "is-size-6"
   | "is-size-7";
-
-export type LatestArticles = {
-  image?: string;
-  placeholder?: string;
-  title?: string;
-  url?: string;
-  description?: string;
-  date: string;
-};
