@@ -2,13 +2,9 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/common/Hero.astro";
 import GitCard from "../components/opensource/GitCard.astro";
-
-import { openSourceData } from "../utils/variables";
-
-const { title, description } = openSourceData;
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title="Open Source" description="Some Open Source projects that I've contributed!">
   <section class="has-text-centered mt-6">
     <Hero
       titleSize="is-size-2"

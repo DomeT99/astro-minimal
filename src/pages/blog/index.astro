@@ -1,9 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Hero from "../../components/common/Hero.astro";
-import Card from "../../components/common/Card.astro";
-
-import { latestArticles } from "../../utils/variables";
 ---
 
 <BaseLayout
@@ -19,24 +16,5 @@ import { latestArticles } from "../../utils/variables";
       subtitleSize="is-size-4"
       subtitleSizeMobile="is-size-5"
     />
-  </section>
-
-  <section class="columns is-multiline mx-auto m-6">
-      {
-        latestArticles.map((article) => {
-          return (
-            <div class="column is-one-third">
-              <Card
-                image={article.image}
-                title={article.title}
-                placeholder={article.placeholder}
-                url={article.url}
-                description={article.description}
-                date={article.date}
-              />
-            </div>
-          );
-        })
-      }
   </section>
 </BaseLayout>

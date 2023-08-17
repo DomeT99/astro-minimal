@@ -1,7 +1,6 @@
 import {
   SocialButton,
   MenuOptions,
-  PageData,
 } from "../types/types";
 
 export const socialButtons: SocialButton[] = [
@@ -25,22 +24,9 @@ export const menuOptions: MenuOptions[] = [
     url: "/blog",
   },
   {
-    label: "PROJECTS",
-    url: "/projects",
-  },
-  {
     label: "OPEN SOURCE",
     url: "/opensource",
   },
 ];
 
-export const openSourceData: PageData = {
-  title: "Open Source",
-  description: "Some Open Source projects that I've contributed!",
-};
-
-export const projectsData:PageData = {
-  title: "Projects",
-  description: "Some projects that I've build!",
-}
 

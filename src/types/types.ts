@@ -8,11 +8,6 @@ export type MenuOptions = {
   url: string;
 };
 
-export type PageData = {
-  title: string;
-  description: string;
-};
-
 export type Size =
   | "is-small"
   | "is-medium"
