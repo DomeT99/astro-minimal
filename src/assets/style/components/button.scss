@@ -21,13 +21,13 @@
     }
 
     &.is-primary:hover {
-      background-color: colors.$white;
-      color: colors.$orange;
-      border: 1px solid colors.$orange;
+      background-color: colors.$light-orange;
+      color: colors.$white;
+      border: 1px solid colors.$light-orange;
       &.is-light:hover {
-        background-color: colors.$light-orange;
+        background-color: colors.$orange;
         color: colors.$white;
-        border: 1px solid colors.$white;
+        border: 1px solid colors.$orange;
       }
     }
   }
