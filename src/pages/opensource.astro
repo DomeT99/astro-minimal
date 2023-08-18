@@ -2,9 +2,24 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/common/Hero.astro";
 import GitCard from "../components/opensource/GitCard.astro";
+
+import { getRepoData } from "../utils/github";
+import { openSourceProjects } from "../utils/variables";
+import { GitHubRepository } from "../types/types";
+
+let response = openSourceProjects?.map(async ({ owner, repo }) => {
+  return (await getRepoData(owner, repo))?.json();
+});
+
+let repoArray: GitHubRepository[] = (await Promise.allSettled(response)).map(
+  (res: any) => res.value as GitHubRepository
+);
 ---
 
-<BaseLayout title="Open Source" description="Some Open Source projects that I've contributed!">
+<BaseLayout
+  title="Open Source"
+  description="Some Open Source projects that I've contributed!"
+>
   <section class="has-text-centered mt-6">
     <Hero
       titleSize="is-size-2"
@@ -16,23 +31,20 @@ import GitCard from "../components/opensource/GitCard.astro";
     />
   </section>
   <section class="columns is-multiline mx-auto mt-6 mb-6">
-    <div class="column is-one-third">
-      <GitCard />
-    </div>
-    <div class="column is-one-third">
-      <GitCard />
-    </div>
-    <div class="column is-one-third">
-      <GitCard />
-    </div>
-    <div class="column is-one-third">
-      <GitCard />
-    </div>
-    <div class="column is-one-third">
-      <GitCard />
-    </div>
-    <div class="column is-one-third">
-      <GitCard />
-    </div>
+    {
+      repoArray.map((item) => {
+        return (
+          <div class="column is-one-third">
+            <GitCard
+              id={item.id}
+              full_name={item.full_name}
+              html_url={item.html_url}
+              description={item.description}
+              stargazers_count={item.stargazers_count}
+            />
+          </div>
+        );
+      })
+    }
   </section>
 </BaseLayout>

@@ -1,24 +1,10 @@
-import { GitHubRepo } from "../types/types";
+const gitHubApiUrl = "https://api.github.com/repos/";
 
-export const openSourceProjects: GitHubRepo[] = [
-  {
-    owner: "vuejs",
-    repo: "devtools",
-  },
-  {
-    owner: "Exifly",
-    repo: "ApiVault",
-  },
-  {
-    owner: "italia",
-    repo: "bootstrap-italia",
-  },
-  {
-    owner: "oruga-ui",
-    repo: "oruga",
-  },
-  {
-    owner: "italia-opensource",
-    repo: "awesome-italia-opensource",
-  }
-];
+export async function getRepoData(owner: string, repo: string) {
+  return fetch(gitHubApiUrl + owner + "/" + repo, {
+    headers: {
+      Authorization: `Bearer ${import.meta.env.GITHUB_TOKEN}`,
+      "X-GitHub-Api-Version": "2022-11-28",
+    },
+  })
+}

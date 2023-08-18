@@ -1,24 +1,42 @@
 ---
 import { Icon } from "astro-icon";
+
+interface Props {
+  id: number;
+  full_name: string;
+  html_url: string;
+  description: string;
+  stargazers_count: number;
+}
+
+const {
+  id,
+  full_name,
+  html_url,
+  description,
+  stargazers_count,
+} = Astro.props;
 ---
 
-<div class="card">
+<div class="card" id={String(id)}>
   <div class="card-content">
     <div class="columns is-mobile">
       <div class="column is-1-desktop is-2-mobile">
         <Icon size={32} name="eva:github-outline" />
       </div>
-      <div class="column is-10-desktop is-9-mobile">
-        <h6>aaaaa</h6>
+      <div class="column is-9-desktop is-9-mobile">
+        <a href={html_url}>
+          <h6>{full_name}</h6>
+        </a>
+      </div>
+      <div class="column is-2-desktop is-2-mobile is-flex is-align-items-center">
+        <p>{stargazers_count}</p>
+        <Icon size={28} name="uil:star" />
       </div>
     </div>
 
-
     <div class="content">
-      Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec
-      id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus
-      et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis
-      consectetur purus sit amet fermentum.
+      {description}
     </div>
   </div>
 </div>
