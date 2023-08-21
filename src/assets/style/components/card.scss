@@ -1,16 +1,22 @@
 .card {
+  box-shadow: none;
+  padding: 0;
+  border: 3px solid #646464;
+  border-radius: 10px;
+  padding: 15px;
+
+  .card-header {
     box-shadow: none;
-    padding: 0;
-    .card-header {
-        box-shadow: none;
-        .card-header-title {
-            padding: 0.5rem 0.25rem;
-        }
+    .card-header-title {
+      padding: 0.5rem 0.25rem;
     }
-    .card-content {
-        padding: 0.5rem 0.25rem;
-    }
-    .card-image:first-child img {
-        border-radius: 1rem;
-    }
+  }
+  .card-content {
+    padding: 0.5rem 0.25rem;
+    height: 18vh;
+    overflow: hidden;
+  }
+  .card-image:first-child img {
+    border-radius: 1rem;
+  }
 }
