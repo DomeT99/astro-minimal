@@ -1,0 +1,32 @@
+---
+import { Icon } from "astro-icon";
+
+interface Props {
+  title: string;
+  date: string;
+  description: string;
+  link: string;
+  devLink: string;
+}
+
+const { title, date, description, link, devLink } = Astro.props;
+---
+
+<div class="card ">
+  <div class="media-content has-text-left h-6">
+    <a href={link}>
+      <h4 class="title is-size-4">
+        {title}
+      </h4>
+    </a>
+    <p class="subtitle is-size-5">{date}</p>
+    <div class="columns">
+      <div class="column is-11">
+        <p>{description}</p>
+      </div>
+      <div class="column is-1">
+        <a href={devLink}> <Icon size={38} name="fa-brands:dev" /></a>
+      </div>
+    </div>
+  </div>
+</div>

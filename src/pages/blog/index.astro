@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Hero from "../../components/common/Hero.astro";
+import BlogCard from "../../components/blog/BlogCard.astro";
 ---
 
 <BaseLayout
@@ -16,5 +17,15 @@ import Hero from "../../components/common/Hero.astro";
       subtitleSize="is-size-4"
       subtitleSizeMobile="is-size-5"
     />
+  </section>
+  <section class="has-text-centered container mx-auto mt-6 mb-6">
+    <div class="columns is-multiline">
+      <div class="column is-12">
+        <BlogCard />
+      </div>
+      <div class="column">
+        <BlogCard />
+      </div>
+    </div>
   </section>
 </BaseLayout>
