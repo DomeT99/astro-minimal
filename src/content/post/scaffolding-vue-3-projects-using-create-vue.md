@@ -1,7 +1,6 @@
 ---
-layout: "../layouts/BaseLayout.astro"
 title: Scaffolding a Vue 3 project using create-vue ⚡️
-author: Domenico Tenace
+description: Official way to scaffolding a new Vue 3 project.
 date: 17th May 2023
 devLink: https://dev.to/dvalin99/scaffolding-a-vue-3-project-using-create-vue-32k1
 ---
@@ -17,7 +16,6 @@ What is the reasons why many developers choose this framework?
 
 This article will show you how to scaffolding a Vue.js application with `create-vue`, the official scaffolding method.
 
-
 #Prerequisites
 
 - Have [Node >= 16](https://nodejs.dev/en/) installed on your machine
@@ -31,6 +29,7 @@ First, run the following command in your command line:
 ```
 npm init vue@latest
 ```
+
 The first time, this command will ask you to install `create-vue` and once installed, the project creation procedure will start.
 You will be presented with prompts for several optional features:
 
@@ -44,6 +43,7 @@ You will be presented with prompts for several optional features:
 √ Add an End-to-End Testing Solution? » No
 √ Add ESLint for code quality? ... No / Yes
 ```
+
 It possible customize the scaffolding of the app adding TypeScript or JSX support, add Pinia or Vue Router, ESLint, Vitest.
 At the end of the process, follow these commands for install the dependencies:
 
@@ -51,8 +51,8 @@ At the end of the process, follow these commands for install the dependencies:
 cd <your-project-name>
 npm install
 ```
-Congratulations! You have created your first Vue app! 🎊
 
+Congratulations! You have created your first Vue app! 🎊
 
 #Run your app
 Now, you have just created your first app.
@@ -77,8 +77,8 @@ Open the terminal and run the following command:
 ```
 npm run dev
 ```
-Follow the url on the console (for example http://localhost:5173) and you will see this:
 
+Follow the url on the console (for example http://localhost:5173) and you will see this:
 
 ![First page Vue app](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hjy4c54m865lq9cy9dw3.JPG)
 

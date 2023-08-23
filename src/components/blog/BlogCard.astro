@@ -5,16 +5,16 @@ interface Props {
   title: string;
   date: string;
   description: string;
-  link: string;
-  devLink: string;
+  devLink?: string;
+  slug?: string;
 }
 
-const { title, date, description, link, devLink } = Astro.props;
+const { title, date, description, slug, devLink } = Astro.props;
 ---
 
-<div class="card ">
+<div class="card">
   <div class="media-content has-text-left h-6">
-    <a href={link}>
+    <a href={slug}>
       <h4 class="title is-size-4">
         {title}
       </h4>
@@ -30,3 +30,10 @@ const { title, date, description, link, devLink } = Astro.props;
     </div>
   </div>
 </div>
+<style>
+  .columns {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    margin-top: -0.75rem;
+  }
+</style>

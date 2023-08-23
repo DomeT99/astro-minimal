@@ -2,9 +2,13 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Hero from "../../components/common/Hero.astro";
 import BlogCard from "../../components/blog/BlogCard.astro";
+import { fetchCollection } from "../../utils/blog";
+
+const posts = await fetchCollection();
 ---
 
 <BaseLayout
+  client:load
   title="Blog"
   description="I write articles about the technologies I use the most"
 >
@@ -21,10 +25,17 @@ import BlogCard from "../../components/blog/BlogCard.astro";
   <section class="has-text-centered container mx-auto mt-6 mb-6">
     <div class="columns is-multiline">
       <div class="column is-12">
-        <BlogCard />
-      </div>
-      <div class="column">
-        <BlogCard />
+        {
+          posts.map((post) => (
+            <BlogCard
+              title={post.data.title}
+              date={post.data.date}
+              description={post.data.description}
+              slug={"/blog/" + post.slug}
+              devLink={post.data.devLink}
+            />
+          ))
+        }
       </div>
     </div>
   </section>
