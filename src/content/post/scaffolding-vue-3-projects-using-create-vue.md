@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BaseLayout.astro
 title: Scaffolding a Vue 3 project using create-vue ⚡️
 description: Official way to scaffolding a new Vue 3 project.
 date: 17th May 2023
