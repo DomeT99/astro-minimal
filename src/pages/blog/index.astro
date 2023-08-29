@@ -14,7 +14,7 @@ const posts = await fetchCollection();
 >
   <section class="has-text-centered mt-6">
     <Hero
-      title="My personal Blog"
+      title="Blog"
       titleSize="is-size-2"
       titleSizeMobile="is-size-3"
       subtitle="I write articles about the technologies I use the most and share my experiences!"
@@ -27,13 +27,15 @@ const posts = await fetchCollection();
       <div class="column is-12">
         {
           posts.map((post) => (
-            <BlogCard
-              title={post.data.title}
-              date={post.data.date}
-              description={post.data.description}
-              slug={"/blog/" + post.slug}
-              devLink={post.data.devLink}
-            />
+            <div class="mt-4">
+              <BlogCard
+                title={post.data.title}
+                date={post.data.date}
+                description={post.data.description}
+                slug={"/blog/" + post.slug}
+                devLink={post.data.devLink}
+              />
+            </div>
           ))
         }
       </div>

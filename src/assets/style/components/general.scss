@@ -1,0 +1,6 @@
+@use "../utils/colors.scss" as colors;
+
+code{
+    color: colors.$orange;
+    padding: 0;
+}

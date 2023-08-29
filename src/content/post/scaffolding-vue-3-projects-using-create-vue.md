@@ -1,12 +1,11 @@
 ---
-layout: ../../layouts/BaseLayout.astro
-title: Scaffolding a Vue 3 project using create-vue ⚡️
-description: Official way to scaffolding a new Vue 3 project.
+title: "Basic concepts of Vue.js: scaffolding a Vue 3 project using create-vue ⚡️"
+description: Vue.js the progressive JavaScript framework, one of three modern frontend framework with Angular and React. What is the reasons why many developers choose this framework?
 date: 17th May 2023
 devLink: https://dev.to/dvalin99/scaffolding-a-vue-3-project-using-create-vue-32k1
 ---
 
-#Overview
+## Overview
 
 Vue.js the progressive JavaScript framework, one of three modern frontend framework with Angular and React.
 What is the reasons why many developers choose this framework?
@@ -17,12 +16,12 @@ What is the reasons why many developers choose this framework?
 
 This article will show you how to scaffolding a Vue.js application with `create-vue`, the official scaffolding method.
 
-#Prerequisites
+## Prerequisites
 
 - Have [Node >= 16](https://nodejs.dev/en/) installed on your machine
 - Familiarity with the command line
 
-#Installation
+# Installation
 `create-vue` is the official method to create a Vue.js Single Page Application (SPA). It's based on [Vite](https://vitejs.dev/) a frontend tool for developing modern web applications.
 
 First, run the following command in your command line:
@@ -83,6 +82,6 @@ Follow the url on the console (for example http://localhost:5173) and you will s
 
 ![First page Vue app](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hjy4c54m865lq9cy9dw3.JPG)
 
-#Conclusion
+# Conclusion
 Vue is a powerful and lightweight framework for creating interactive user interfaces and now you can scaffolding a project to create any applications you would like.
 Happy coding!✨
