@@ -2,6 +2,7 @@
 import Navbar from "../components/common/Navbar.astro";
 import Footer from "../components/common/Footer.astro";
 import "../assets/style/main.scss";
+import "../assets/style/components/post.scss";
 
 export interface Props {
   title?: string;
@@ -16,7 +17,7 @@ const {
 } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -30,7 +31,9 @@ const {
     <Navbar />
     <section class="min-100-vh container mt-6 mb-6">
       <header class="has-text-centered mb-6">
-        <h1 class="is-size-1-desktop is-size-3-tablet is-size-4-mobile">{postTitle}</h1>
+        <h1 class="is-size-1-desktop is-size-3 black">
+          {postTitle}
+        </h1>
       </header>
       <slot />
     </section>

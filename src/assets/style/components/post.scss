@@ -1,0 +1,38 @@
+@use "../utils/colors.scss" as colors;
+
+h2 {
+  margin-top: 1.8rem;
+  font-size: 2.4rem !important;
+  color: colors.$gray !important;
+}
+p {
+  font-size: 1.68rem !important;
+  line-height: 2.9rem;
+}
+p > strong {
+  font-size: 1.68rem !important;
+  background-color: colors.$light-orange !important;
+  border-radius: 10px;
+}
+ol,
+ul {
+  list-style: disc;
+  li {
+    font-size: 1.68rem !important;
+  }
+}
+p > code {
+  font-size: 1.68rem !important;
+  color: colors.$orange !important;
+  padding: 0 !important;
+}
+pre {
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+hr {
+  opacity: 0;
+}
+img {
+  margin-top: 1.8rem;
+}
