@@ -4,8 +4,8 @@ import Hero from "../components/common/Hero.astro";
 import GitCard from "../components/opensource/GitCard.astro";
 
 import { getRepoData } from "../utils/github";
-import { openSourceProjects } from "../utils/variables";
-import { GitHubRepository } from "../types/types";
+import { openSourceProjects } from "../utils/data";
+import { type GitHubRepository } from "../types/types";
 
 let response = openSourceProjects?.map(async ({ owner, repo }) => {
   return (await getRepoData(owner, repo))?.json();
