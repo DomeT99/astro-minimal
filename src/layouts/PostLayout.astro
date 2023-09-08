@@ -1,6 +1,7 @@
 ---
 import Navbar from "../components/common/Navbar.astro";
 import Footer from "../components/common/Footer.astro";
+import { SEO } from "astro-seo";
 import "../assets/style/main.scss";
 import "../assets/style/components/post.scss";
 
@@ -21,11 +22,23 @@ const {
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <SEO
+      title={title}
+      description={description}
+      extend={{
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        meta: [
+          {
+            name: "viewport",
+            content: "width=device-width",
+          },
+          {
+            name: "generator",
+            content: Astro.generator,
+          },
+        ],
+      }}
+    />
   </head>
   <body>
     <Navbar />
