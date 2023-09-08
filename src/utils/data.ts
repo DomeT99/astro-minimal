@@ -6,16 +6,16 @@ import type {
 
 export const socialButtons: SocialButton[] = [
   {
-    icon: "eva:linkedin-outline",
+    icon: "fa-brands:linkedin",
     url: "https://www.linkedin.com/in/domenico-tenace/",
   },
   {
-    icon: "eva:github-outline",
+    icon: "fa-brands:github",
     url: "https://github.com/DomeT99",
   },
   {
-    icon: "eva:twitter-outline",
-    url: "https://twitter.com/dome_tena99",
+    icon: "fa-brands:mastodon",
+    url: "https://mastodon.uno/@dvalin99",
   },
 ];
 

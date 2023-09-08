@@ -9,18 +9,20 @@ interface Props {
   stargazers_count: number;
 }
 
-const { id, full_name, html_url, description, stargazers_count } = Astro.props;
+const { id, full_name, html_url, description } = Astro.props;
 ---
 
 <div class="card" id={String(id)}>
   <div class="card-content">
     <div class="columns is-mobile">
       <div class="column is-1-desktop is-2-tablet is-2-mobile">
-        <Icon size={38} name="eva:github-outline" />
+        <Icon size={38} name="fa-brands:github" />
       </div>
       <div class="column is-offset-1-desktop is-9-desktop is-7-mobile">
         <a href={html_url}>
-          <h6 class="is-size-5-desktop is-size-6-tablet is-size-6-mobile">{full_name}</h6>
+          <h6 class="is-size-5-desktop is-size-6-tablet is-size-6-mobile">
+            {full_name}
+          </h6>
         </a>
       </div>
     </div>
@@ -30,4 +32,3 @@ const { id, full_name, html_url, description, stargazers_count } = Astro.props;
     </div>
   </div>
 </div>
-
