@@ -6,14 +6,14 @@ import "../assets/style/main.scss";
 import "../assets/style/components/post.scss";
 
 export interface Props {
-  title?: string;
-  description?: string;
+  pageTitle: string;
+  pageDescription: string;
   postTitle: string;
 }
 
 const {
-  title = "Default Title",
-  description = "Default Description",
+  pageTitle,
+  pageDescription,
   postTitle,
 } = Astro.props;
 ---
@@ -23,8 +23,8 @@ const {
   <head>
     <meta charset="UTF-8" />
     <SEO
-      title={title}
-      description={description}
+      title={pageTitle}
+      description={pageDescription}
       extend={{
         link: [{ rel: "icon", href: "/favicon.ico" }],
         meta: [

@@ -5,11 +5,11 @@ import { SEO } from "astro-seo";
 import "../assets/style/main.scss";
 
 export interface Props {
-  title?: string;
-  description?: string;
+  pageTitle?: string;
+  pageDescription?: string;
 }
 
-const { title, description } = Astro.props;
+const { pageTitle, pageDescription } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,8 +17,8 @@ const { title, description } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <SEO
-      title={title?.includes("404") ? title : `Domenico Tenace - ${title}`}
-      description={description}
+      title={pageTitle?.includes("404") ? pageTitle : `Domenico Tenace - ${pageTitle}`}
+      description={pageDescription}
       extend={{
         link: [{ rel: "icon", href: "/favicon.ico" }],
         meta: [
