@@ -1,3 +1,3 @@
-# My Personal Website 😎
+# Astro Minimal 😎
 
 For now, it's under construction 🚧
