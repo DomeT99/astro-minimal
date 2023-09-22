@@ -24,17 +24,9 @@ export type TextSize =
   | "is-size-6"
   | "is-size-7";
 
-export type GitHubRepo = {
-  owner: string;
-  repo: string;
-};
-
 export type GitHubRepository = {
   id: number;
-  name: string;
   full_name: string;
   html_url: string;
   description: string;
-  stargazers_count: number;
-  language: string;
 };

@@ -5,18 +5,19 @@ import BlogCard from "../../components/blog/BlogCard.astro";
 import { fetchCollection } from "../../utils/blog";
 
 const posts = await fetchCollection();
+posts.sort((a: any, b: any) => b.data.date - a.data.date);
 ---
 
 <BaseLayout
-  pageTitle="Blog"
-  pageDescription="I write articles about the technologies I use the most"
+  pageTitle="Lorem Ipsum"
+  pageDescription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cupiditate. Sit consequuntur, quas voluptate quidem facere ipsum doloremque! Possimus deserunt eos voluptatibus molestias, minima id dolorum excepturi doloremque odit repudiandae?"
 >
   <section class="has-text-centered mt-6">
     <Hero
       title="Blog"
       titleSize="is-size-2"
       titleSizeMobile="is-size-3"
-      subtitle="I write articles about the technologies I use the most and share my experiences!"
+      subtitle="This is blog section where there's a list of posts."
       subtitleSize="is-size-4"
       subtitleSizeMobile="is-size-5"
     />
@@ -26,7 +27,7 @@ const posts = await fetchCollection();
       <div class="column is-12">
         {
           posts.map((post) => (
-            <div class="mb-6">
+            <div class="mb-6 fade-in">
               <BlogCard
                 title={post.data.title}
                 date={post.data.date}
