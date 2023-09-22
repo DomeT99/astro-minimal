@@ -14,12 +14,20 @@ export const socialButtons: SocialButton[] = [
     url: "https://github.com/DomeT99",
   },
   {
+    icon: "fa-brands:dev",
+    url: "https://dev.to/dvalin99",
+  },
+  {
     icon: "fa-brands:mastodon",
     url: "https://mastodon.uno/@dvalin99",
   },
 ];
 
 export const menuOptions: MenuOptions[] = [
+  {
+    label: "HOME",
+    url: "/",
+  },
   {
     label: "BLOG",
     url: "/blog",
