@@ -1,5 +1,5 @@
 {
-  "name": "personal-website",
+  "name": "astro-minimal",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^1.0.0",
-    "astro": "^3.0.5",
+    "@astrojs/mdx": "^1.1.0",
+    "astro": "^3.1.2",
     "astro-icon": "^0.8.1",
     "astro-seo": "^0.8.0",
     "bulma": "^0.9.4",
-    "sass": "^1.62.1"
+    "sass": "^1.68.0"
   }
 }
