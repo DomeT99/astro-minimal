@@ -1,6 +1,7 @@
-$orange: #ffa500;
-$dark-orange: #ff8b1e;
-$light-orange: #ffc862;
+//Brand Colors
+$primary: #ffa500;
+$secondary: #ffc862;
+//Other
 $dark-gray: #1f1f1f;
 $gray: #303030;
 $light-gray: #646464;
@@ -8,21 +9,18 @@ $black: #000;
 $white: #fff;
 
 //Color
+.astro-c-primary {
+  color: $primary !important;
+}
 .dark-gray {
   color: $dark-gray !important;
 }
-
 .gray {
   color: $gray !important;
 }
-
 .light-gray {
   color: $light-gray !important;
 }
-.orange {
-  color: $orange !important;
-}
-
 .black {
   color: $black !important;
 }

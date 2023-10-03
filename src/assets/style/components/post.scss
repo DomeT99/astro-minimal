@@ -11,7 +11,7 @@ p {
 }
 p > strong {
   font-size: 1.68rem !important;
-  background-color: colors.$light-orange !important;
+  background-color: colors.$secondary !important;
   border-radius: 10px;
 }
 ol,
@@ -22,13 +22,13 @@ ul {
   }
   li > code {
     font-size: 1.68rem !important;
-    color: colors.$orange !important;
+    color: colors.$primary !important;
     padding: 0 !important;
   }
 }
 p > code {
   font-size: 1.68rem !important;
-  color: colors.$orange !important;
+  color: colors.$primary !important;
   padding: 0 !important;
 }
 pre {

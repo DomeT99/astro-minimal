@@ -9,41 +9,41 @@
   }
 
   &.button:focus {
-    box-shadow: 0 0 0 0.125em colors.$light-orange;
+    box-shadow: 0 0 0 0.125em colors.$secondary;
   }
 
   &.is-primary {
-    background-color: colors.$orange;
+    background-color: colors.$primary;
     &.is-light {
       background-color: colors.$white;
-      color: colors.$orange;
-      border: 1px solid colors.$orange;
+      color: colors.$primary;
+      border: 1px solid colors.$primary;
     }
 
     &.is-primary:hover {
-      background-color: colors.$light-orange;
+      background-color: colors.$secondary;
       color: colors.$white;
-      border: 1px solid colors.$light-orange;
+      border: 1px solid colors.$secondary;
       &.is-light:hover {
-        background-color: colors.$orange;
+        background-color: colors.$primary;
         color: colors.$white;
-        border: 1px solid colors.$orange;
+        border: 1px solid colors.$primary;
       }
     }
 
     &.is-primary:active {
-      background-color: colors.$light-orange;
+      background-color: colors.$secondary;
       color: colors.$white;
-      border: 1px solid colors.$light-orange;
+      border: 1px solid colors.$secondary;
       &.is-light:active {
-        background-color: colors.$orange;
+        background-color: colors.$primary;
         color: colors.$white;
-        border: 1px solid colors.$orange;
+        border: 1px solid colors.$primary;
       }
     }
 
     &.is-primary:focus:not(:active) {
-      box-shadow:0 0 0 0.125em colors.$light-orange;
+      box-shadow:0 0 0 0.125em colors.$secondary;
     }
   }
 }
