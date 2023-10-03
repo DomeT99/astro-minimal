@@ -1,8 +1,5 @@
-import type {
-  SocialButton,
-  MenuOptions,
-  GitHubRepository,
-} from "../types/types";
+import type { SocialButton, MenuOptions } from "../types/components";
+import type { GitHubRepository } from "../types/github";
 
 export const socialButtons: SocialButton[] = [
   {

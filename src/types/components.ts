@@ -23,10 +23,3 @@ export type TextSize =
   | "is-size-5"
   | "is-size-6"
   | "is-size-7";
-
-export type GitHubRepository = {
-  id: number;
-  full_name: string;
-  html_url: string;
-  description: string;
-};
