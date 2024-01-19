@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^1.1.0",
-    "astro": "^3.1.2",
-    "astro-icon": "^0.8.1",
+    "@astrojs/mdx": "^1.1.5",
+    "astro": "^3.6.4",
+    "astro-icon": "^0.8.2",
     "astro-seo": "^0.8.0",
     "bulma": "^0.9.4",
-    "sass": "^1.68.0"
+    "sass": "^1.70.0"
   }
 }
