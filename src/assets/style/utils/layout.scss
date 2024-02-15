@@ -1,18 +1,28 @@
-//Height
+.min-6-vh {
+  min-height: 6vh;
+}
+.min-10-vh {
+  min-height: 10vh;
+}
+.min-14-vh {
+  min-height: 14vh;
+}
 .min-18-vh {
   min-height: 18vh;
 }
 .min-23-vh {
   min-height: 23vh;
 }
+.min-25-vh {
+  min-height: 23vh;
+}
 .min-100-vh {
   min-height: 100vh;
 }
+
 .h-75 {
   height: 75vh;
 }
-
-//Width
 .w-100 {
   width: 100%;
 }
@@ -20,4 +30,16 @@
 //COLUMN
 .columns {
   margin: 0;
+}
+
+@media all and (min-width: 768px) { 
+  ol, ul {
+    padding-left: 1.75rem;
+  } 
+}
+
+@media not all and (min-width: 768px) { 
+  ol, ul {
+    padding-left: 1.25rem;
+  } 
 }

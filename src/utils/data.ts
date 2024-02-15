@@ -4,19 +4,19 @@ import type { GitHubRepository } from "../types/github";
 export const socialButtons: SocialButton[] = [
   {
     icon: "fa-brands:linkedin",
-    url: "https://www.linkedin.com/in/domenico-tenace/",
+    url: "https://www.linkedin.com/",
   },
   {
     icon: "fa-brands:github",
-    url: "https://github.com/DomeT99",
+    url: "https://github.com/DomeT99/astro-minimal",
   },
   {
     icon: "fa-brands:dev",
-    url: "https://dev.to/dvalin99",
+    url: "https://dev.to",
   },
   {
-    icon: "fa-brands:mastodon",
-    url: "https://mastodon.uno/@dvalin99",
+    icon: "fa-brands:twitter",
+    url: "https://twitter.com/",
   },
 ];
 

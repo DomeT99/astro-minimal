@@ -3,9 +3,10 @@
 h2 {
   margin-top: 1.8rem;
   font-size: 2.4rem !important;
-  color: colors.$gray !important;
+  color: colors.$quaternary !important;
 }
-p {
+p,
+.link  {
   font-size: 1.68rem !important;
   line-height: 2.9rem;
 }
@@ -14,11 +15,16 @@ p > strong {
   background-color: colors.$secondary !important;
   border-radius: 10px;
 }
+.link {
+  color: colors.$primary !important;
+  text-decoration: underline;
+}
 ol,
 ul {
   list-style: disc;
   li {
     font-size: 1.68rem !important;
+    color: colors.$quinary !important;
   }
   li > code {
     font-size: 1.68rem !important;
@@ -29,6 +35,7 @@ ul {
 p > code {
   font-size: 1.68rem !important;
   color: colors.$primary !important;
+  background-color: colors.$white;
   padding: 0 !important;
 }
 pre {
@@ -44,17 +51,17 @@ img {
 
 //Media Query
 @media (min-width: 769px) and (max-width: 1023px) {
-  h2 {
+  h2, h3 {
     font-size: 2.1rem !important;
-    color: colors.$gray !important;
+    color: colors.$quaternary !important;
   }
 }
 
 @media (max-width: 768px) {
-  h2 {
+  h2, h3 {
     font-size: 1.25rem !important;
   }
-  p {
+  p, .link  {
     font-size: 1rem !important;
     line-height: 1.5rem;
   }

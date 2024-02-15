@@ -5,59 +5,63 @@
 
 h1 {
   @include mixins.generate-font("Prompt", bold, 2.7rem);
-  @extend .dark-gray;
+  @extend .tertiary-color;
 }
 
 h2 {
   @include mixins.generate-font("Prompt", bold, 2.2rem);
-  @extend .dark-gray;
+  @extend .tertiary-color;
 }
 
 h3 {
   @include mixins.generate-font("Prompt", bold, 2rem);
-  @extend .dark-gray;
+  @extend .tertiary-color;
 }
 
 h4 {
   @include mixins.generate-font("Prompt", bold, 1.7rem);
-  @extend .gray;
+  @extend .quaternary-color;
 }
 
 h5 {
   @include mixins.generate-font("Prompt", bold, 1.5rem);
-  @extend .gray;
+  @extend .quaternary-color;
 }
 
 h6 {
   @include mixins.generate-font("Prompt", bold, 1.3rem);
-  @extend .gray;
+  @extend .quaternary-color;
 }
 
 p {
   @include mixins.generate-font("Prompt", normal, 1.1rem);
-  @extend .light-gray;
+  @extend .quinary-color;
 }
 
-a{
-
+a {
   @include mixins.generate-font("Prompt", normal, 1.1rem);
-  @extend .light-gray;
+  @extend .quinary-color;
 }
 
 //Size
-.f-size-17{
+.f-size-17 {
   font-size: 1.7rem !important;
 }
 
 //Weight
-.f-600{
+.f-600 {
   font-weight: 600 !important;
 }
-.f-normal{
+.f-normal {
   font-weight: normal !important;
 }
 
+//Decoration
+.underline {
+  text-decoration: underline;
+}
+
 //Global
-*{
+* {
   @include mixins.generate-font("Prompt", normal, 1.1rem);
 }

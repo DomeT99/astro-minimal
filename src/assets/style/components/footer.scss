@@ -2,6 +2,9 @@
 
 .footer {
   background-color: colors.$white;
-  border-top: 3px solid colors.$gray;
+  border-top: 0.1875rem solid colors.$quaternary;
   padding: 1rem 1.5rem 2.5rem;
+  .bg-social-btn {
+    background-color: colors.$white;
+  }
 }

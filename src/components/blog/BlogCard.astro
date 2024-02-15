@@ -23,7 +23,7 @@ const { title, date, description, slug, devLink } = Astro.props;
       <time datetime={String(date)}> {getFormattedDate(date)}</time>
     </p>
 
-    <div class="columns">
+    <div class="columns is-multiline">
       <div class="column is-11">
         <p>{description}</p>
       </div>
@@ -33,7 +33,7 @@ const { title, date, description, slug, devLink } = Astro.props;
     </div>
     <div class="columns">
       <div class="column is-12">
-        <a href={slug}><h6 class="astro-c-primary ">Read more</h6></a>
+        <a href={slug}><h6 class="primary-color">Read more</h6></a>
       </div>
     </div>
   </div>

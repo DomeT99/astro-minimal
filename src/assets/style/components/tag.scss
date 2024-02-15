@@ -1,0 +1,5 @@
+@use "../utils/colors.scss" as colors;
+.tag {
+  background-color: colors.$quinary !important;
+  color: colors.$white !important;
+}

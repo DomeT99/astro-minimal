@@ -4,8 +4,8 @@
   transition: all 0.3s ease;
   &.is-rounded {
     border: none;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   &.button:focus {
@@ -17,33 +17,33 @@
     &.is-light {
       background-color: colors.$white;
       color: colors.$primary;
-      border: 1px solid colors.$primary;
+      border: 0.0625rem solid colors.$primary;
     }
 
     &.is-primary:hover {
       background-color: colors.$secondary;
       color: colors.$white;
-      border: 1px solid colors.$secondary;
+      border: 0.0625rem solid colors.$secondary;
       &.is-light:hover {
         background-color: colors.$primary;
         color: colors.$white;
-        border: 1px solid colors.$primary;
+        border: 0.0625rem solid colors.$primary;
       }
     }
 
     &.is-primary:active {
       background-color: colors.$secondary;
       color: colors.$white;
-      border: 1px solid colors.$secondary;
+      border: 0.0625rem solid colors.$secondary;
       &.is-light:active {
         background-color: colors.$primary;
         color: colors.$white;
-        border: 1px solid colors.$primary;
+        border: 0.0625rem solid colors.$primary;
       }
     }
 
     &.is-primary:focus:not(:active) {
-      box-shadow:0 0 0 0.125em colors.$secondary;
+      box-shadow: 0 0 0 0.125em colors.$secondary;
     }
   }
 }

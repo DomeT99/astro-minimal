@@ -1,13 +1,14 @@
 ---
+import { Icon } from "astro-icon";
 import { menuOptions } from "../../utils/data";
-import GitHubRibbon from "./GitHubRibbon.astro";
 ---
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
-  <GitHubRibbon />
-  <div class="navbar-brand mt-4-desktop mb-2 ml-2">
-    <a class="navbar-item no-pointer">
-      <h1 class="is-size-3 is-size-5-mobile dark-gray f-normal">JOHN DOE</h1>
+  <div class="navbar-brand mt-4-desktop pt-4 mb-2 ml-2">
+    <a class="navbar-item" href="/">
+      <h1 class="is-size-3 is-size-5-mobile tertiary-color f-normal">
+        JOHN DOE
+      </h1>
     </a>
 
     <a
@@ -28,17 +29,24 @@ import GitHubRibbon from "./GitHubRibbon.astro";
       {
         menuOptions.map((option) => {
           return (
-            <a href={option.url} class="navbar-item f-600 dark-gray ">
+            <a href={option.url} class="navbar-item f-600 tertiary-color ">
               {option.label}
             </a>
           );
         })
       }
+      <Icon
+        class="ml-4 mt-4 tertiary-color baseline-dark-mode pointer"
+        size={34}
+        name="mdi:theme-light-dark"
+      />
     </div>
   </div>
 </nav>
 
 <script>
+  import { setTheme } from "../../utils/theme";
+
   function openBurger() {
     const $navbarBurgers = Array.prototype.slice.call(
       document.querySelectorAll(".navbar-burger"),
@@ -57,7 +65,9 @@ import GitHubRibbon from "./GitHubRibbon.astro";
     });
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    openBurger();
-  });
+  document
+    .querySelector(".baseline-dark-mode")
+    ?.addEventListener("click", () => setTheme());
+
+  document.addEventListener("DOMContentLoaded", () => openBurger());
 </script>

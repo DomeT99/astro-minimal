@@ -15,7 +15,7 @@ const { pageTitle, pageDescription, postTitle } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <SEO
@@ -56,3 +56,8 @@ const { pageTitle, pageDescription, postTitle } = Astro.props;
     <Footer />
   </body>
 </html>
+
+<script>
+  import { getTheme } from "../utils/theme";
+  document.addEventListener("DOMContentLoaded", () => getTheme());
+</script>

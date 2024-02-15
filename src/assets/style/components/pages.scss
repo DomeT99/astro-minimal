@@ -1,0 +1,5 @@
+@use "../utils/colors.scss" as colors;
+
+body {
+  background-color: colors.$white;
+}

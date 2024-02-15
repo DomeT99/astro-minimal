@@ -11,11 +11,11 @@ interface Props {
 const { id, full_name, html_url, description } = Astro.props;
 ---
 
-<div class="card min-23-vh" id={String(id)}>
+<div class="card" id={String(id)}>
   <div class="card-content">
     <div class="columns is-variable is-5-desktop is-6-mobile is-mobile">
       <div class="column is-1-desktop is-2-tablet is-1-mobile">
-        <Icon size={38} name="fa-brands:github" />
+        <Icon size={32} name="fa-brands:github" />
       </div>
       <div class="column is-9-desktop is-7-mobile">
         <a href={html_url}>
@@ -26,8 +26,8 @@ const { id, full_name, html_url, description } = Astro.props;
       </div>
     </div>
 
-    <div class="content">
-      {description}
+    <div class="content min-14-vh">
+      <p>{description}</p>
     </div>
   </div>
 </div>

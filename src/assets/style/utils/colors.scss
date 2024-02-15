@@ -1,26 +1,51 @@
-//Brand Colors
-$primary: #ffa500;
-$secondary: #ffc862;
-//Other
-$dark-gray: #1f1f1f;
-$gray: #303030;
-$light-gray: #646464;
-$black: #000;
-$white: #fff;
+html[data-theme="light"] {
+  --primary-color: #ffa500;
+  --secondary-color: #ffc862;
+  --tertiary-color: #1f1f1f;
+  --quaternary-color: #303030;
+  --quinary-color: #646464;
+  --neutral-color-one: #000;
+  --neutral-color-two: #fff;
+}
+
+html[data-theme="dark"] {
+  --primary-color: #ffa500;
+  --secondary-color: #ffc862;
+  --tertiary-color: #fff;
+  --quaternary-color: #c0c0c0;
+  --quinary-color: #c0c0c0;
+  --neutral-color-one: #fff;
+  --neutral-color-two: #000;
+}
+
+$primary: var(--primary-color);
+$secondary: var(--secondary-color);
+$tertiary: var(--tertiary-color);
+$quaternary: var(--quaternary-color);
+$quinary: var(--quinary-color);
+$black: var(--neutral-color-one);
+$white: var(--neutral-color-two);
 
 //Color
-.astro-c-primary {
+.tertiary-color {
+  color: $tertiary !important;
+}
+.quaternary-color {
+  color: $quaternary !important;
+}
+.quinary-color {
+  color: $quinary !important;
+}
+.primary-color {
   color: $primary !important;
-}
-.dark-gray {
-  color: $dark-gray !important;
-}
-.gray {
-  color: $gray !important;
-}
-.light-gray {
-  color: $light-gray !important;
 }
 .black {
   color: $black !important;
+}
+.white {
+  color: $white !important;
+}
+//Background
+.bg-white {
+  background-color: $white;
 }

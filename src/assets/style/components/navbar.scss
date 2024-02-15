@@ -1,6 +1,7 @@
 @use "../utils/colors.scss" as colors;
 
 .navbar {
+  background-color: colors.$white;
   .navbar-item:hover,
   .navbar-item:focus,
   .navbar-item:active {
@@ -9,12 +10,9 @@
   }
   .navbar-menu {
     box-shadow: none;
+     background-color: colors.$white;
   }
   .navbar-burger:hover {
     background-color: colors.$white;
   }
-}
-
-.no-pointer {
-  cursor: auto;
 }
