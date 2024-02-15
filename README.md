@@ -14,9 +14,5 @@ Astro Minimal is an open source blog template designed and developed using Astro
 If you have feedback or have encountered any problems or bugs, feel free to open an issue in the dedicated section 🤞
 
 
-## Misc.
-This template used to power [my personal site](https://domenicotenace.netlify.app), that you can find in "personal-blog" branch of this repository.
-
-
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
