@@ -13,12 +13,18 @@ export default function SearchBoxOrama() {
     }
     const results = await searchDB(term);
     searchResults.value = results.map((r) => r.document);
+    console.log(searchResults.value);
+  }
+
+  function handleModal(isShow) {
+    showModal.value = isShow;
+    searchResults.value = [];
   }
 
   return (
     <>
       <svg
-        onClick={() => (showModal.value = true)}
+        onClick={() => handleModal(true)}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
         width="26"
@@ -33,7 +39,7 @@ export default function SearchBoxOrama() {
             <header class="modal-card-head">
               <p class="modal-card-title"></p>
               <button
-                onClick={() => (showModal.value = false)}
+                onClick={() => handleModal(false)}
                 class="delete"
                 aria-label="close"
               ></button>
@@ -47,7 +53,7 @@ export default function SearchBoxOrama() {
                 onInput={search}
               />
               {searchResults.value.length > 0 ? (
-                <ul>
+                <ul class="mt-6">
                   <>
                     {searchResults.value.map(({ title, url }) => (
                       <li>

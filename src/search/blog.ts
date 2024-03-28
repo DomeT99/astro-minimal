@@ -1,4 +1,5 @@
-import { create, insert } from "@orama/orama";  
+import { create, insert } from "@orama/orama";
+import { posts } from "../content";
 
 export default async function fill() {
   const blogDB = await create({
@@ -11,17 +12,20 @@ export default async function fill() {
     } as const,
   });
 
-  // await insert(blogDB, {
-  //   title: computedProps.frontmatter.title,
-  //   date: computedProps.frontmatter.date,
-  //   content: computedProps.rawContent(),
-  //   url: "/blog/computed-properties",
-  // });
+  for (const post of posts) {
+    await insert(blogDB, {
+      title: post.frontmatter.title,
+      date: post.frontmatter.date,
+      content: post.frontmatter.content,
+      url:
+        "/blog/" + post.url.split("src/content/post/").pop().split(".mdx")[0],
+    });
+  }
 
   return {
     instance: blogDB,
     params: {
-      tolerance: 3,
+      tolerance: 1,
       limit: 5,
       boost: {
         title: 5,
