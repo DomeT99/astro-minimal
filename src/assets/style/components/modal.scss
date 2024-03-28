@@ -1,0 +1,15 @@
+@use "../utils/colors.scss" as colors;
+
+.modal {
+  .modal-card {
+    border: 0.1875rem solid colors.$white;
+    border-radius: 0.625rem;
+    .modal-card-head {
+      background-color: colors.$white;
+      border-bottom: 0.1rem solid #646464;
+    }
+    .modal-card-body {
+      height: 35vh;
+    }
+  }
+}

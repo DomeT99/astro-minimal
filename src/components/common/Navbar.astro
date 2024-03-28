@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon";
 import { menuOptions } from "../../utils/data";
+import SearchBoxOrama from "./SearchBoxOrama";
 ---
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -10,7 +11,6 @@ import { menuOptions } from "../../utils/data";
         JOHN DOE
       </h1>
     </a>
-
     <a
       role="button"
       class="navbar-burger"
@@ -35,6 +35,8 @@ import { menuOptions } from "../../utils/data";
           );
         })
       }
+      <SearchBoxOrama client:visible />
+
       <Icon
         class="ml-4 mt-4 tertiary-color baseline-dark-mode pointer"
         size={34}
