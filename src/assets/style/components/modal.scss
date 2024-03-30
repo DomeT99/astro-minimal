@@ -2,7 +2,7 @@
 
 .modal {
   .modal-card {
-    border: 0.1875rem solid colors.$white;
+    border: 0.1875rem solid #646464;
     border-radius: 0.625rem;
     .modal-card-head {
       background-color: colors.$white;
@@ -10,6 +10,18 @@
     }
     .modal-card-body {
       height: 35vh;
+      background-color: colors.$white;
+      .input {
+        border-radius: 0.625rem; 
+        &.input:active,
+        &.input:focus {
+          border: 0.1rem solid colors.$primary;
+          box-shadow: none;
+        }
+      }
+    }
+    .modal-card-foot {
+      background-color: colors.$white;
     }
   }
 }

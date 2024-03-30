@@ -7,7 +7,7 @@ export default async function fill() {
     schema: {
       title: "string",
       date: "string",
-      content: "string",
+      description: "string",
       url: "string",
     } as const,
   });
@@ -16,7 +16,7 @@ export default async function fill() {
     await insert(blogDB, {
       title: post.frontmatter.title,
       date: post.frontmatter.date,
-      content: post.frontmatter.content,
+      description: post.frontmatter.description,
       url:
         "/blog/" + post.url.split("src/content/post/").pop().split(".mdx")[0],
     });
