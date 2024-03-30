@@ -1,10 +1,12 @@
 import { useSignal, useComputed, useSignalEffect } from "@preact/signals";
 import searchDB from "../../search/index";
+import oramaLightLogo from "../../../public/images/logo-orama-light.svg";
+import oramaDarkLogo from "../../../public/images/logo-orama-dark.svg";
 
 export default function SearchBoxOrama() {
   const searchResults = useSignal([]);
   const showModal = useSignal(false);
-  const oramaLogo = useSignal("../../../public/images/logo-orama-light.svg");
+  const oramaLogo = useSignal(oramaLightLogo);
 
   async function search(e) {
     const term = e.target.value;
@@ -25,11 +27,11 @@ export default function SearchBoxOrama() {
 
   function _handleOramaLogo() {
     if (document.querySelector("html")?.getAttribute("data-theme") == "dark") {
-      oramaLogo.value = "../../../public/images/logo-orama-dark.svg";
+      oramaLogo.value = oramaDarkLogo.src;
     } else if (
       document.querySelector("html")?.getAttribute("data-theme") == "light"
     ) {
-      oramaLogo.value = "../../../public/images/logo-orama-light.svg";
+      oramaLogo.value = oramaLightLogo.src;
     }
   }
 
@@ -92,6 +94,7 @@ export default function SearchBoxOrama() {
               >
                 <figure class="mt-2 ml-1">
                   <img
+                    id="orama-logo"
                     width="80"
                     height="20"
                     alt="Orama Logo"
