@@ -52,7 +52,7 @@ function _handleOramaLogo() {
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title"></p>
+          <p class="modal-card-title paragraph"></p>
           <button
             @click="() => handleModal(false)"
             class="delete"
@@ -70,25 +70,31 @@ function _handleOramaLogo() {
           <template v-if="searchResults.length > 0">
             <ul class="mt-6 pl-2">
               <li class="mt-4" v-for="result in searchResults">
-                <a :href="result.url" target="_blank" rel="noopener noreferrer">
-                  <h6>{{ result.title }}</h6>
+                <a
+                  :href="result.url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link"
+                >
+                  <h6 class="subtitle">{{ result.title }}</h6>
                 </a>
-                <p>{{ result.description }}</p>
+                <p class="paragraph">{{ result.description }}</p>
               </li>
             </ul>
           </template>
           <template v-else>
             <div class="has-text-centered mt-6">
-              <p>Search something...</p>
+              <p class="paragraph">Search something...</p>
             </div>
           </template>
         </section>
         <footer class="modal-card-foot is-flex is-justify-content-end">
-          <p>Powered by</p>
+          <p class="paragraph">Powered by</p>
           <a
             href="https://oramasearch.com/"
             target="_blank"
             rel="noopener noreferrer"
+            class="link"
           >
             <figure class="mt-2 ml-1">
               <img
@@ -110,19 +116,21 @@ function _handleOramaLogo() {
 @use "../../assets/style/utils/mixins.scss";
 @import "../../assets/style/utils/colors.scss";
 
-h6 {
+.subtitle {
   @include mixins.generate-font("Prompt", bold, 1.3rem);
   @extend .quaternary-color;
 }
 
-p {
+.paragraph {
   @include mixins.generate-font("Prompt", normal, 1.1rem);
   @extend .quinary-color;
+  line-height: 2rem;
 }
 
-a {
+.link {
   @include mixins.generate-font("Prompt", normal, 1.1rem);
   @extend .quinary-color;
+  text-decoration: none !important;
 }
 
 ul {
@@ -130,8 +138,5 @@ ul {
 }
 img {
   margin-top: 0;
-}
-p {
-  line-height: 2rem;
 }
 </style>
