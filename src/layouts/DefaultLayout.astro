@@ -1,0 +1,21 @@
+---
+import Navbar from "../components/common/Navbar.astro";
+import Footer from "../components/common/Footer.astro";
+import "../assets/style/main.scss";
+---
+
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
+  <script>
+    import { getTheme } from "../utils/theme";
+    document.addEventListener("DOMContentLoaded", () => getTheme());
+  </script>
+</html>

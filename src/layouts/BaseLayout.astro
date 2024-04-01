@@ -1,8 +1,6 @@
 ---
-import Navbar from "../components/common/Navbar.astro";
-import Footer from "../components/common/Footer.astro";
+import DefaultLayout from "./DefaultLayout.astro";
 import { SEO } from "astro-seo";
-import "../assets/style/main.scss";
 
 export interface Props {
   pageTitle?: string;
@@ -13,7 +11,7 @@ const { pageTitle, pageDescription } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" data-theme="light"> 
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <SEO
@@ -35,15 +33,10 @@ const { pageTitle, pageDescription } = Astro.props;
     />
   </head>
   <body>
-    <Navbar />
-    <section class="min-100-vh">
-      <slot />
-    </section>
-    <Footer />
+    <DefaultLayout>
+      <section class="min-100-vh">
+        <slot />
+      </section>
+    </DefaultLayout>
   </body>
 </html>
-
-<script>
-  import { getTheme } from "../utils/theme";
-  document.addEventListener("DOMContentLoaded", () => getTheme());
-</script>
