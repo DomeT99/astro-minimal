@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
-import preact from "@astrojs/preact";
+import vue from "@astrojs/vue";
 
 export default defineConfig({
-  integrations: [mdx(), preact()],
+  integrations: [mdx(), vue()],
 });
