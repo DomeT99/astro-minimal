@@ -13,7 +13,7 @@
     "@astrojs/mdx": "^1.1.5",
     "@astrojs/vue": "^3.0.0",
     "@orama/orama": "^2.0.12",
-    "astro": "^3.6.4",
+    "astro": "^4.7.1",
     "astro-icon": "^0.8.2",
     "astro-seo": "^0.8.0",
     "bulma": "^0.9.4",
