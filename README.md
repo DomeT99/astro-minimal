@@ -1,5 +1,6 @@
 # Astro Minimal 😎
 
+<a href="https://app.commanddash.io/agent?github=https://github.com/DomeT99/astro-minimal"><img src="https://img.shields.io/badge/AI-Code%20Gen-EB9FDA"></a>
 
 ![](./public/images/HomeAstroMinimal.png)
 
@@ -15,8 +16,14 @@ If you have feedback or have encountered any problems or bugs, feel free to open
 All instructions can be found in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 
-## Support
- <a href="https://www.producthunt.com/posts/astro-minimal?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-astro&#0045;minimal" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=449365&theme=dark" alt="Astro&#0032;Minimal&#0032; - An&#0032;open&#0032;source&#0032;blog&#0032;template&#0032;build&#0032;with&#0032;Astro&#0032;and&#0032;Bulma&#0032;🚀 | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+## Support 
+
+If you like this project, you can support me with a very small donation. 
+<br/>
+I would be grateful 🥹
+<br/>
+<br/>
+ <a href="https://www.buymeacoffee.com/domenicotenace" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
