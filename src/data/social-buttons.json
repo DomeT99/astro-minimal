@@ -1,0 +1,14 @@
+[
+  {
+    "icon": "fa-brands:linkedin",
+    "url": "https://www.linkedin.com/"
+  },
+  {
+    "icon": "fa-brands:github",
+    "url": "https://github.com/DomeT99/astro-minimal"
+  },
+  {
+    "icon": "fa-brands:dev",
+    "url": "https://dev.to"
+  }
+]
