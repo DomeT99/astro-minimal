@@ -10,7 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^1.1.5",
     "@astrojs/vue": "^3.0.0",
     "@orama/orama": "^2.0.12",
     "astro": "^4.7.1",

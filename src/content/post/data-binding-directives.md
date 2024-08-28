@@ -9,8 +9,7 @@ devLink: https://dev.to/dvalin99/data-binding-directives-5gn2
 
 Vue provides a special attribute called "Directive" the reactive changes to the DOM.
 In this article will explains what is a Directive and how to use it.
-<br />
-Let's start🤙🏻
+
 
 ## What is a Directive?
 
@@ -87,7 +86,3 @@ There are another to declare `v-bind` and `v-on`, shorthand way:
 
 Directives are a very important feature of Vue that allow you to manipulate data dynamically.
 For this reason it is essential to know in depth.
-And now...
-
-<br />
-Happy coding!✨

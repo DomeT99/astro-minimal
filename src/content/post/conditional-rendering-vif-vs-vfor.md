@@ -10,8 +10,6 @@ devLink: https://dev.to/dvalin99/conditional-rendering-v-if-vs-v-show-4n1a
 In some cases it happens that you want to render certain portions of software according to certain conditions.
 In this article will explains what is Conditional rendering and how Vue handle it.
 
-<br />
-Let's start🤙🏻
 
 ## What is Conditional rendering?
 
@@ -77,6 +75,3 @@ In general, `v-if` has higher toggle costs while `v-show` has higher initial ren
 
 These are the ways in which Vue handles Conditional Rendering, which can be expensive when rendering with `v-show` and more expensive when toggle with `v-if`.
 They must be used in the right contexts.
-
-<br />
-Happy coding!✨

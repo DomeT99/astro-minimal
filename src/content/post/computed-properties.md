@@ -10,9 +10,6 @@ devLink: https://dev.to/dvalin99/computed-properties-482
 Vue uses special properties called "Computed properties" to help apps perform best and avoid boring code repetition for developers.
 In this article you will discover the features behind this incredible properties.
 
-<br />
-Let's start 🤙🏻
-
 ---
 
 ## What are Computed Properties?
@@ -100,5 +97,3 @@ Computed Properties are reactive and are calculated whenever their dependencies 
 Computed properties are a very important feature of Vue and allow the development of high-performance applications with lower computational costs.
 Therefore they are strongly recommended.
 
-<br />
-Happy coding!✨
