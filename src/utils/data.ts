@@ -14,10 +14,6 @@ export const socialButtons: SocialButton[] = [
     icon: "fa-brands:dev",
     url: "https://dev.to",
   },
-  {
-    icon: "fa-brands:twitter",
-    url: "https://twitter.com/",
-  },
 ];
 
 export const menuOptions: MenuOptions[] = [
