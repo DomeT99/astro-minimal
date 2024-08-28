@@ -1,8 +1,7 @@
 ---
 title: "Computed Properties 🤙"
 description: Vue uses special properties called "Computed properties" to help apps perform best and avoid boring code repetition for developers.
-date: 2023-09-09
-devLink: https://dev.to/dvalin99/computed-properties-482
+date: 2023-09-09 
 ---
 
 ## Overview
