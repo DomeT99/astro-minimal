@@ -2,6 +2,8 @@
 
 .button {
   transition: all 0.3s ease;
+  border: 0.0625rem solid colors.$secondary !important;
+  box-shadow:none;
   &.is-rounded {
     border: none;
     padding-left: 0.75rem;
@@ -23,7 +25,7 @@
     &.is-primary:hover {
       background-color: colors.$secondary;
       color: colors.$white;
-      border: 0.0625rem solid colors.$secondary;
+      border: 0.0625rem solid colors.$secondary !important;
       &.is-light:hover {
         background-color: colors.$primary;
         color: colors.$white;

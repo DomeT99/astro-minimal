@@ -13,7 +13,7 @@ import Button from "../components/common/Button.astro";
       title="Hello I'm John! 👋"
       titleSize="is-size-1"
       titleSizeMobile="is-size-2"
-      subtitle="Software architect passionate about the IT world and everything related to it. I write technical articles to share my experiences and knowledge."
+      subtitle="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit reiciendis accusamus deleniti at explicabo? Sunt ad voluptates ipsam sequi velit!"
       subtitleSize="is-size-3"
       subtitleSizeMobile="is-size-5"
       size="is-large"
@@ -35,3 +35,10 @@ import Button from "../components/common/Button.astro";
     </Hero>
   </section>
 </BaseLayout>
+<style scoped>
+  .columns {
+    margin-inline-start: calc(-1 * var(--bulma-column-gap));
+    margin-inline-end: calc(-1 * var(--bulma-column-gap));
+    margin-top: calc(-1 * var(--bulma-column-gap));
+  }
+</style>

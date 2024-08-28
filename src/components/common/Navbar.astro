@@ -35,13 +35,15 @@ import SearchBoxOrama from "./SearchBoxOrama.vue";
           );
         })
       }
-      <SearchBoxOrama client:visible />
+      <div class="mt-4">
+        <SearchBoxOrama client:visible />
 
-      <Icon
-        class="ml-4 mt-4 tertiary-color baseline-dark-mode pointer"
-        size={34}
-        name="mdi:theme-light-dark"
-      />
+        <Icon
+          class="ml-4 tertiary-color baseline-dark-mode pointer"
+          size={34}
+          name="mdi:theme-light-dark"
+        />
+      </div>
     </div>
   </div>
 </nav>
