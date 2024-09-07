@@ -16,6 +16,7 @@
 
   &.is-primary {
     background-color: colors.$primary;
+    color: colors.$white;
     &.is-light {
       background-color: colors.$white;
       color: colors.$primary;
