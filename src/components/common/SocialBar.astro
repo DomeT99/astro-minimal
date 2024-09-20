@@ -8,7 +8,7 @@ import socialButtons from "../../data/social-buttons.json";
     socialButtons.map((button) => {
       return (
         <li class="p-2">
-          <a class="button is-rounded bg-social-btn" href={button.url}>
+          <a class="button is-rounded bg-social-btn" href={button.url} aria-label={"Follow John on " + button.name}>
             <Icon size={32} name={button.icon} />
           </a>
         </li>

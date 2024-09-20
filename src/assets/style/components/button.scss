@@ -4,6 +4,7 @@
   transition: all 0.3s ease;
   border: 0.0625rem solid colors.$secondary !important;
   box-shadow:none;
+  font-size: 18pt !important;
   &.is-rounded {
     border: none;
     padding-left: 0.75rem;
