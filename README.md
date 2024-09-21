@@ -2,6 +2,7 @@
 
 <a href="https://app.commanddash.io/agent?github=https://github.com/DomeT99/astro-minimal"><img src="https://img.shields.io/badge/AI-Code%20Gen-EB9FDA"></a>
 
+![TopPerformance](https://github.com/user-attachments/assets/f4ccd92d-7f68-4b7b-a7d4-92d9d7a9b829)
 
 During the development of [my website](https://domenicotenace.dev/), I thought: "why not develop something standard that I can use as a basis for other projects and make it open source?"
 <br/>
