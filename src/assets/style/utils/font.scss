@@ -1,35 +1,48 @@
 @use "mixins";
+@import "colors.scss"; 
 
-@import "colors.scss";
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "Prompt";
+  src: url("/src/assets/fonts/PromptRegular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Prompt Medium";
+  src: url("/src/assets/fonts/PromptMedium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Prompt Bold";
+  src: url("/src/assets/fonts/PromptBold.ttf"); 
+}
 
 h1 {
-  @include mixins.generate-font("Prompt", bold, 2.7rem);
+  @include mixins.generate-font("Prompt Bold", bold, 2.7rem);
   @extend .tertiary-color;
 }
 
 h2 {
-  @include mixins.generate-font("Prompt", bold, 2.2rem);
+  @include mixins.generate-font("Prompt Bold", bold, 2.2rem);
   @extend .tertiary-color;
 }
 
 h3 {
-  @include mixins.generate-font("Prompt", bold, 2rem);
+  @include mixins.generate-font("Prompt Bold", bold, 2rem);
   @extend .tertiary-color;
 }
 
 h4 {
-  @include mixins.generate-font("Prompt", bold, 1.7rem);
+  @include mixins.generate-font("Prompt Bold", bold, 1.7rem);
   @extend .quaternary-color;
 }
 
 h5 {
-  @include mixins.generate-font("Prompt", bold, 1.5rem);
+  @include mixins.generate-font("Prompt Bold", bold, 1.5rem);
   @extend .quaternary-color;
 }
 
 h6 {
-  @include mixins.generate-font("Prompt", bold, 1.3rem);
+  @include mixins.generate-font("Prompt Bold", bold, 1.3rem);
   @extend .quaternary-color;
 }
 
