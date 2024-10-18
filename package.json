@@ -10,13 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vue": "^4.5.0",
-    "@orama/orama": "^2.0.23",
-    "astro": "^4.14.6",
+    "@astrojs/vue": "^4.5.2",
+    "@orama/orama": "^3.0.1",
+    "astro": "^4.16.6",
     "astro-icon": "^0.8.2",
     "astro-seo": "^0.8.4",
     "bulma": "^1.0.2",
-    "sass": "^1.77.8",
-    "vue": "^3.4.38"
+    "sass": "^1.80.2",
+    "vue": "^3.5.12"
   }
 }
