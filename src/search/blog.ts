@@ -18,7 +18,7 @@ export default async function fill() {
       date: post.frontmatter.date,
       description: post.frontmatter.description,
       url:
-        "/blog/" + post.file!.split("src/content/post/").pop()!.split(".md")[0],
+        "/blog/" + post.file!.split("src/content/blog/").pop()!.split(".md")[0],
     });
   }
 
