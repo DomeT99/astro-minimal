@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from 'astro-icon/components'
 import { getFormattedDate } from "../../utils/utils";
 
 interface Props {
@@ -19,7 +19,7 @@ const { title, date, description, slug, devLink } = Astro.props;
       {title}
     </h4>
     <p class="subtitle is-size-5 is-flex">
-      <Icon class="mr-1" size={22} name="ion:time-outline" />
+      <Icon class="mr-1" size={22} name="ri:time-line" />
       <time datetime={String(date)}> {getFormattedDate(date)}</time>
     </p>
 
