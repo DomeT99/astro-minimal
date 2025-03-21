@@ -13,6 +13,7 @@
     "@astrojs/vue": "^5.0.7",
     "@iconify-json/fa6-brands": "^1.2.5",
     "@iconify-json/gg": "^1.2.2",
+    "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/ph": "^1.2.2",
     "@iconify-json/ri": "^1.2.5",
     "@orama/orama": "^3.1.3",

@@ -1,6 +1,7 @@
 ---
 import Navbar from "../components/common/Navbar.astro";
 import Footer from "../components/common/Footer.astro";
+import LangButton from "../components/common/LangButton.astro";
 import "../assets/style/main.scss";
 ---
 
@@ -13,9 +14,10 @@ import "../assets/style/main.scss";
     <Navbar />
     <slot />
     <Footer />
+    <LangButton />
   </body>
-  <script>
-    import { getTheme } from "../utils/theme";
-    document.addEventListener("DOMContentLoaded", () => getTheme());
-  </script>
 </html>
+<script>
+  import { getTheme } from "../utils/theme";
+  document.addEventListener("DOMContentLoaded", () => getTheme());
+</script>
