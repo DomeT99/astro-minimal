@@ -1,7 +1,7 @@
 ---
 import Navbar from "../components/common/Navbar.astro";
 import Footer from "../components/common/Footer.astro";
-import LangButton from "../components/common/LangButton.astro";
+import LangButton from "../components/common/LangButton.vue";
 import "../assets/style/main.scss";
 ---
 
@@ -14,7 +14,7 @@ import "../assets/style/main.scss";
     <Navbar />
     <slot />
     <Footer />
-    <LangButton />
+    <LangButton client:visible />
   </body>
 </html>
 <script>
