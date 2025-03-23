@@ -1,10 +1,10 @@
 ---
 import { changeLanguage } from "i18next";
-import PostLayout from "../../layouts/PostLayout.astro";
+import PostLayout from "../../../layouts/PostLayout.astro";
 import { type CollectionEntry } from "astro:content";
-import { fetchCollection } from "../../utils/blog";
+import { fetchCollection } from "../../../utils/blog";
 
-changeLanguage("en");
+changeLanguage("it");
 
 export async function getStaticPaths() {
     const posts = await fetchCollection();

@@ -3,10 +3,11 @@ import Navbar from "../components/common/Navbar.astro";
 import Footer from "../components/common/Footer.astro";
 import LangButton from "../components/common/LangButton.vue";
 import "../assets/style/main.scss";
+import i18next from "i18next";
 ---
 
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang={i18next.language} data-theme="light">
   <head>
     <meta charset="UTF-8" />
   </head>

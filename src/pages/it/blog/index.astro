@@ -1,11 +1,11 @@
 ---
 import { changeLanguage } from "i18next";
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import Hero from "../../components/common/Hero.astro";
-import BlogCard from "../../components/blog/BlogCard.astro";
-import { fetchCollection } from "../../utils/blog";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Hero from "../../../components/common/Hero.astro";
+import BlogCard from "../../../components/blog/BlogCard.astro";
+import { fetchCollection } from "../../../utils/blog";
 
-changeLanguage("en");
+changeLanguage("it");
 
 const posts = await fetchCollection();
 posts.sort((a: any, b: any) => b.data.date - a.data.date);
