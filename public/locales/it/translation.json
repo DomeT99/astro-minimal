@@ -1,4 +1,10 @@
 {
+  "site":{
+    "notFoundPageTitle": "Error 404 😵",
+    "notFoundPageDescription": "Ci dispiace, questa pagina non esiste.",
+    "notFoundTitle": "Oh no...",
+    "notFoundDescription": "Questa pagina non esiste 😵"
+  },
   "home": {
     "pageTitle": "Home",
     "pageDescription": "Sviluppatore di software appassionato del mondo IT e tutto ciò che riguarda. Scrivo articoli tecnici per condividere le mie esperienze e conoscenze.",

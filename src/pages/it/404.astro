@@ -1,13 +1,13 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 changeLanguage("it");
 ---
 
-<BaseLayout pageTitle="Error 404 😵" pageDescription="Sorry, this page doesn't exist.">
+<BaseLayout pageTitle={t("site.notFoundPageTitle")!} pageDescription={t("site.notFoundPageDescription")!}>
   <section class="has-text-centered mt-6">
-    <h1 class="is-size-1 is-size-3-mobile">Sorry...</h1>
-    <p class="is-size-3 is-size-4-mobile">This page doesn't exist 😵</p>
+    <h1 class="is-size-1 is-size-3-mobile">{t("site.notFoundTitle")}</h1>
+    <p class="is-size-3 is-size-4-mobile">{t("site.notFoundDescription")}</p>
   </section>
 </BaseLayout>
