@@ -6,10 +6,10 @@ import BlogCard from "../../components/blog/BlogCard.astro";
 import { fetchCollection } from "../../utils/blog";
 import { localizePath } from "astro-i18next";
 
+changeLanguage("en");
+
 const posts = await fetchCollection();
 posts.sort((a: any, b: any) => b.data.date - a.data.date);
-
-changeLanguage("en");
 ---
 
 <BaseLayout
