@@ -1,27 +1,19 @@
 ---
 import Navbar from "../components/common/Navbar.astro";
 import Footer from "../components/common/Footer.astro";
-import "../assets/style/main.scss";
-import i18next from "i18next";
+import "../assets/style/main.scss"; 
 import { LanguageSelector } from "astro-i18next/components";
 ---
 
-<!doctype html>
-<html lang={i18next.language} data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-  </head>
-  <body>
-    <Navbar />
-    <slot />
-    <Footer />
-    <LanguageSelector
-      class="button is-rounded is-sticky"
-      showFlag={true}
-      languageMapping={{ en: "", it: "" }}
-    />
-  </body>
-</html>
+<Navbar />
+<slot />
+<Footer />
+<LanguageSelector
+  class="button is-rounded is-sticky"
+  showFlag={true}
+  languageMapping={{ en: "", it: "" }}
+/>
+
 <script>
   import { getTheme } from "../utils/theme";
   document.addEventListener("DOMContentLoaded", () => getTheme());
