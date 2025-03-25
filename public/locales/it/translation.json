@@ -13,6 +13,12 @@
     "blogBtn": "Vai al blog",
     "openSourceBtn": "Open Source"
   },
+  "blog": {
+    "pageTitle": "Blog",
+    "pageDescription": "Questa è la sezione blog dove viene mostrata una lista di post.",
+    "title": "Blog",
+    "subtitle": "Questa è la sezione blog dove viene mostrata una lista di post."
+  },
   "opensource": {
     "pageTitle": "Open Source",
     "pageDescription": "Questa è la sezione open source dove viene mostrata una lista di progetti.",

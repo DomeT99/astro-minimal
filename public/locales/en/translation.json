@@ -13,6 +13,12 @@
     "blogBtn": "Read my blog",
     "openSourceBtn": "Open Source"
   },
+  "blog": {
+    "pageTitle": "Blog",
+    "pageDescription": "This is blog section where there's a list of posts.",
+    "title": "Blog",
+    "subtitle": "This is blog section where there's a list of posts."
+  },
   "opensource": {
     "pageTitle": "Open Source",
     "pageDescription": "This is the open source section where there is a list of projects.",

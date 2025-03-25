@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Hero from "../../components/common/Hero.astro";
 import BlogCard from "../../components/blog/BlogCard.astro";
@@ -12,15 +12,15 @@ posts.sort((a: any, b: any) => b.data.date - a.data.date);
 ---
 
 <BaseLayout
-  pageTitle="Lorem Ipsum"
-  pageDescription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cupiditate. Sit consequuntur, quas voluptate quidem facere ipsum doloremque! Possimus deserunt eos voluptatibus molestias, minima id dolorum excepturi doloremque odit repudiandae?"
+  pageTitle={t("blog.pageTitle")!}
+  pageDescription={t("blog.pageDescription")!}
 >
   <section class="has-text-centered mt-6">
     <Hero
-      title="Blog"
+      title={t("blog.title")}
       titleSize="is-size-2"
       titleSizeMobile="is-size-3"
-      subtitle="This is blog section where there's a list of posts."
+      subtitle={t("blog.subtitle")}
       subtitleSize="is-size-4"
       subtitleSizeMobile="is-size-5"
     />
