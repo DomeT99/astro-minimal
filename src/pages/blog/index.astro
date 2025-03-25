@@ -4,11 +4,12 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Hero from "../../components/common/Hero.astro";
 import BlogCard from "../../components/blog/BlogCard.astro";
 import { fetchCollection } from "../../utils/blog";
-
-changeLanguage("en");
+import { localizePath } from "astro-i18next";
 
 const posts = await fetchCollection();
 posts.sort((a: any, b: any) => b.data.date - a.data.date);
+
+changeLanguage("en");
 ---
 
 <BaseLayout
@@ -35,7 +36,7 @@ posts.sort((a: any, b: any) => b.data.date - a.data.date);
                 title={post.data.title}
                 date={post.data.date}
                 description={post.data.description}
-                slug={"/blog/" + post.slug}
+                slug={localizePath("/blog/" + post.slug)}
                 devLink={post.data.devLink}
               />
             </div>
