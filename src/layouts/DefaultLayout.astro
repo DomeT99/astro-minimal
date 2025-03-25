@@ -1,9 +1,9 @@
 ---
 import Navbar from "../components/common/Navbar.astro";
 import Footer from "../components/common/Footer.astro";
-import LangButton from "../components/common/LangButton.vue";
 import "../assets/style/main.scss";
 import i18next from "i18next";
+import { LanguageSelector } from "astro-i18next/components";
 ---
 
 <!doctype html>
@@ -15,7 +15,11 @@ import i18next from "i18next";
     <Navbar />
     <slot />
     <Footer />
-    <LangButton client:visible />
+    <LanguageSelector
+      class="button is-rounded is-sticky"
+      showFlag={true}
+      languageMapping={{ en: "", it: "" }}
+    />
   </body>
 </html>
 <script>
