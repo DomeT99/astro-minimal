@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Hero from "../../../components/common/Hero.astro";
 import GitCard from "../../../components/opensource/GitCard.astro";
@@ -9,15 +9,15 @@ changeLanguage("it");
 ---
 
 <BaseLayout
-  pageTitle="Lorem Ipsum"
-  pageDescription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cupiditate. Sit consequuntur, quas voluptate quidem facere ipsum doloremque! Possimus deserunt eos voluptatibus molestias, minima id dolorum excepturi doloremque odit repudiandae?"
+  pageTitle={t("opensource.pageTitle")!}
+  pageDescription={t("opensource.pageDescription")!}
 >
   <section class="has-text-centered mt-6">
     <Hero
       titleSize="is-size-2"
       titleSizeMobile="is-size-3"
-      title="Open Source"
-      subtitle="This is the open source section where there is a list of projects."
+      title={t("opensource.title")!}
+      subtitle={t("opensource.subtitle")!}
       subtitleSize="is-size-4"
       subtitleSizeMobile="is-size-5"
     />

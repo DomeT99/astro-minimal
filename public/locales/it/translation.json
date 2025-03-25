@@ -12,5 +12,11 @@
     "subtitle": "Sviluppatore di software appassionato del mondo IT e tutto ciò che riguarda. Scrivo articoli tecnici per condividere le mie esperienze e conoscenze.",
     "blogBtn": "Vai al blog",
     "openSourceBtn": "Open Source"
+  },
+  "opensource": {
+    "pageTitle": "Open Source",
+    "pageDescription": "Questa è la sezione open source dove viene mostrata una lista di progetti.",
+    "title": "Open Source",
+    "subtitle": "Questa è la sezione open source dove viene mostrata una lista di progetti."
   }
 }
