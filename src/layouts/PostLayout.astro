@@ -1,6 +1,8 @@
 ---
 import DefaultLayout from "./DefaultLayout.astro";
+import i18next, { t } from "i18next";
 import { SEO } from "astro-seo";
+import { localizePath } from "astro-i18next";
 import "../assets/style/main.scss";
 import "../assets/style/components/post.scss";
 
@@ -14,7 +16,7 @@ const { pageTitle, pageDescription, postTitle } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang={i18next.language} data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <SEO
@@ -38,8 +40,8 @@ const { pageTitle, pageDescription, postTitle } = Astro.props;
   <body>
     <DefaultLayout>
       <section class="min-100-vh container mt-6 mb-6">
-        <a class="light-gray is-size-6-mobile ml-4" href="/blog"
-          >👈&nbsp;<u class="is-size-6-mobile">Return to blog</u></a
+        <a class="light-gray is-size-6-mobile ml-4" href={localizePath("/blog")}
+          >👈&nbsp;<u class="is-size-6-mobile">{t("post.backBtn")}</u></a
         >
         <header class="has-text-centered mr-4 ml-4 m-6-desktop mt-6 fade-in">
           <h1 class="is-size-1-desktop is-size-2-tablet is-size-4-mobile black">

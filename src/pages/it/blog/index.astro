@@ -36,7 +36,7 @@ posts.sort((a: any, b: any) => b.data.date - a.data.date);
                 title={post.data.title}
                 date={post.data.date}
                 description={post.data.description}
-                slug={localizePath("/blog/" + post.slug)}
+                slug={localizePath(`/blog/${post.slug}`)}
                 devLink={post.data.devLink}
               />
             </div>

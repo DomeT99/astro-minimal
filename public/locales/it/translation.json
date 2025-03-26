@@ -1,5 +1,5 @@
 {
-  "site":{
+  "site": {
     "notFoundPageTitle": "Error 404 😵",
     "notFoundPageDescription": "Ci dispiace, questa pagina non esiste.",
     "notFoundTitle": "Oh no...",
@@ -18,6 +18,9 @@
     "pageDescription": "Questa è la sezione blog dove viene mostrata una lista di post.",
     "title": "Blog",
     "subtitle": "Questa è la sezione blog dove viene mostrata una lista di post."
+  },
+  "post": {
+    "backBtn": "Torna indietro"
   },
   "opensource": {
     "pageTitle": "Open Source",

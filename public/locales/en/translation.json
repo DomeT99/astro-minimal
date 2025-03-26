@@ -19,6 +19,9 @@
     "title": "Blog",
     "subtitle": "This is blog section where there's a list of posts."
   },
+  "post": {
+    "backBtn": "Return to blog"
+  },
   "opensource": {
     "pageTitle": "Open Source",
     "pageDescription": "This is the open source section where there is a list of projects.",

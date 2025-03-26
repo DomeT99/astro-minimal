@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/common/Hero.astro";
 import Button from "../components/common/Button.astro";
 import { t, changeLanguage } from "i18next";
+import { localizePath } from "astro-i18next";
 
 changeLanguage("en");
 ---
@@ -23,10 +24,12 @@ changeLanguage("en");
     >
       <div class="columns is-variable">
         <div class="column is-6-desktop">
-          <a href="/blog"><Button size="is-large" label={t("home.blogBtn")} /></a>
+          <a href={localizePath("/blog")}
+            ><Button size="is-large" label={t("home.blogBtn")} /></a
+          >
         </div>
         <div class="column is-6-desktop">
-          <a href="/opensource"
+          <a href={localizePath("/opensource")}
             ><Button
               size="is-large"
               bgColor="is-primary is-light"
