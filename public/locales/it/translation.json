@@ -7,25 +7,25 @@
   },
   "home": {
     "pageTitle": "Home",
-    "pageDescription": "Sviluppatore di software appassionato del mondo IT e tutto ciò che riguarda. Scrivo articoli tecnici per condividere le mie esperienze e conoscenze.",
+    "pageDescription": "Sviluppatore software appassionato del mondo IT e tutto ciò che lo riguarda. Scrivo articoli tecnici per condividere le mie esperienze e conoscenze.",
     "title": "Ciao sono John! 👋",
-    "subtitle": "Sviluppatore di software appassionato del mondo IT e tutto ciò che riguarda. Scrivo articoli tecnici per condividere le mie esperienze e conoscenze.",
+    "subtitle": "Sviluppatore software appassionato del mondo IT e tutto ciò che lo riguarda. Scrivo articoli tecnici per condividere le mie esperienze e conoscenze.",
     "blogBtn": "Vai al blog",
     "openSourceBtn": "Open Source"
   },
   "blog": {
     "pageTitle": "Blog",
-    "pageDescription": "Questa è la sezione blog dove viene mostrata una lista di post.",
+    "pageDescription": "Questa è la sezione blog dove viene mostrata la lista dei miei articoli.",
     "title": "Blog",
-    "subtitle": "Questa è la sezione blog dove viene mostrata una lista di post."
+    "subtitle": "Questa è la sezione blog dove viene mostrata la lista dei miei articoli."
   },
   "post": {
     "backBtn": "Torna indietro"
   },
   "opensource": {
     "pageTitle": "Open Source",
-    "pageDescription": "Questa è la sezione open source dove viene mostrata una lista di progetti.",
+    "pageDescription": "Questa è la sezione open source dove viene mostrata una lista di progetti a cui ho contribuito.",
     "title": "Open Source",
-    "subtitle": "Questa è la sezione open source dove viene mostrata una lista di progetti."
+    "subtitle": "Questa è la sezione open source dove viene mostrata una lista di progetti a cui ho contribuito."
   }
 }
