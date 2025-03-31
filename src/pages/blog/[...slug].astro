@@ -1,27 +1,27 @@
 ---
+import { changeLanguage } from "i18next";
 import PostLayout from "../../layouts/PostLayout.astro";
 import { type CollectionEntry } from "astro:content";
 import { fetchCollection } from "../../utils/blog";
 
+changeLanguage("en");
+
 export async function getStaticPaths() {
-  const posts = await fetchCollection();
-
-  return posts.map((post) => {
-    return {
-      params: {
-        slug: post.slug,
-      },
-      props: {
-        post,
-      },
-    };
-  });
+    const posts = await fetchCollection();
+    return posts.map((post) => {
+        return {
+            params: {
+                slug: post.slug,
+            },
+            props: {
+                post,
+            },
+        };
+    });
 }
-
 interface Props {
-  post: CollectionEntry<"post">;
+    post: CollectionEntry<"post">;
 }
-
 const { post } = Astro.props;
 const { Content } = await post.render();
 ---

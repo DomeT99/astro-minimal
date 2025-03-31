@@ -1,0 +1,30 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="dropdown is-right" id="language-dropdown">
+  <div class="dropdown-trigger">
+    <button
+      class="button is-primary is-rounded is-sticky"
+      id="language-switcher"
+      aria-haspopup="true"
+      aria-controls="dropdown-menu"
+    >
+      <Icon class="baseline-dark-mode pointer" size={28} name="mdi:language" />
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+    <div class="dropdown-content">
+      <a href="#" class="dropdown-item">🇬🇧</a>
+      <a href="#" class="dropdown-item">🇮🇹</a>
+    </div>
+  </div>
+</div> 
+<style>
+  .is-sticky {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+</style>

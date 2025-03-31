@@ -1,0 +1,31 @@
+{
+  "site": {
+    "notFoundPageTitle": "Error 404 😵",
+    "notFoundPageDescription": "Ci dispiace, questa pagina non esiste.",
+    "notFoundTitle": "Oh no...",
+    "notFoundDescription": "Questa pagina non esiste 😵"
+  },
+  "home": {
+    "pageTitle": "Home",
+    "pageDescription": "Sviluppatore software appassionato del mondo IT e tutto ciò che lo riguarda. Scrivo articoli tecnici per condividere le mie esperienze e conoscenze.",
+    "title": "Ciao sono John! 👋",
+    "subtitle": "Sviluppatore software appassionato del mondo IT e tutto ciò che lo riguarda. Scrivo articoli tecnici per condividere le mie esperienze e conoscenze.",
+    "blogBtn": "Vai al blog",
+    "openSourceBtn": "Open Source"
+  },
+  "blog": {
+    "pageTitle": "Blog",
+    "pageDescription": "Questa è la sezione blog dove viene mostrata la lista dei miei articoli.",
+    "title": "Blog",
+    "subtitle": "Questa è la sezione blog dove viene mostrata la lista dei miei articoli."
+  },
+  "post": {
+    "backBtn": "Torna indietro"
+  },
+  "opensource": {
+    "pageTitle": "Open Source",
+    "pageDescription": "Questa è la sezione open source dove viene mostrata una lista di progetti a cui ho contribuito.",
+    "title": "Open Source",
+    "subtitle": "Questa è la sezione open source dove viene mostrata una lista di progetti a cui ho contribuito."
+  }
+}

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import searchDB from "../../search/index";
 import oramaLightLogo from "../../../public/images/logo-orama-light.svg";
 import oramaDarkLogo from "../../../public/images/logo-orama-dark.svg";
@@ -7,16 +7,17 @@ import oramaDarkLogo from "../../../public/images/logo-orama-dark.svg";
 const searchResults = ref<any>([]);
 const showModal = ref(false);
 const oramaLogo = ref("");
+const searchLabel = ref("Search something...");
+const searchPlaceholder = ref("Search");
 
-async function search(e: any) {
-  const term = e.target.value;
-  if (term.length < 2) {
-    searchResults.value = [];
-    return;
+onMounted(() => {
+  const htmlTag = document.querySelector("html") as HTMLHtmlElement;
+
+  if (htmlTag.lang == "it") {
+    searchLabel.value = "Cerca qualcosa...";
+    searchPlaceholder.value = "Cerca";
   }
-  const results = await searchDB(term);
-  searchResults.value = results.map((r) => r.document);
-}
+});
 
 function handleModal(isShow: boolean) {
   showModal.value = isShow;
@@ -32,6 +33,16 @@ function _handleOramaLogo() {
   ) {
     oramaLogo.value = oramaLightLogo.src;
   }
+}
+
+async function search(e: any) {
+  const term = e.target.value;
+  if (term.length < 2) {
+    searchResults.value = [];
+    return;
+  }
+  const results = await searchDB(term);
+  searchResults.value = results.map((r) => r.document);
 }
 </script>
 <template>
@@ -64,7 +75,7 @@ function _handleOramaLogo() {
             id="search-bar"
             type="text"
             class="input"
-            placeholder="Search..."
+            :placeholder="searchPlaceholder"
             @input="search"
           />
           <template v-if="searchResults.length > 0">
@@ -84,7 +95,7 @@ function _handleOramaLogo() {
           </template>
           <template v-else>
             <div class="has-text-centered mt-6">
-              <p class="paragraph">Search something...</p>
+              <p class="paragraph">{{ searchLabel }}</p>
             </div>
           </template>
         </section>

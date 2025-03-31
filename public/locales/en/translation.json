@@ -1,0 +1,31 @@
+{
+  "site": {
+    "notFoundPageTitle": "Error 404 😵",
+    "notFoundPageDescription": "Sorry, this page doesn't exist.",
+    "notFoundTitle": "Sorry...",
+    "notFoundDescription": "This page doesn't exist 😵"
+  },
+  "home": {
+    "pageTitle": "Home",
+    "pageDescription": "Software developer passionate about the IT world and everything related to it. I write technical articles to share my experiences and knowledge.",
+    "title": "Hello I'm John! 👋",
+    "subtitle": "Software developer passionate about the IT world and everything related to it. I write technical articles to share my experiences and knowledge.",
+    "blogBtn": "Read my blog",
+    "openSourceBtn": "Open Source"
+  },
+  "blog": {
+    "pageTitle": "Blog",
+    "pageDescription": "This is blog section where there's a list of posts.",
+    "title": "Blog",
+    "subtitle": "This is blog section where there's a list of posts."
+  },
+  "post": {
+    "backBtn": "Return to blog"
+  },
+  "opensource": {
+    "pageTitle": "Open Source",
+    "pageDescription": "This is the open source section where there is a list of projects.",
+    "title": "Open Source",
+    "subtitle": "This is the open source section where there is a list of projects."
+  }
+}

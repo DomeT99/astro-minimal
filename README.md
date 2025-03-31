@@ -15,6 +15,7 @@ Astro Minimal is an open source blog template designed and developed using Astro
 - Markdown support for blog post
 - 100% responsive
 - Full text search integrate with [Orama](https://github.com/askorama/orama)
+- i18n feature (not for `.md` files for now)
 
 ## Feedback
 If you have feedback or have encountered any problems or bugs, feel free to open an issue in the dedicated section 🤞

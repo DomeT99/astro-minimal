@@ -2,11 +2,12 @@
 import { Icon } from "astro-icon/components";
 import menuOptions from "../../data/menu-options.json";
 import SearchBoxOrama from "./SearchBoxOrama.vue";
+import { localizePath } from "astro-i18next";
 ---
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand mt-4-desktop pt-4 mb-2 ml-2">
-    <a class="navbar-item" href="/">
+    <a class="navbar-item" href={localizePath("/")}>
       <h1 class="is-size-3 is-size-5-mobile tertiary-color f-normal">
         JOHN DOE
       </h1>
@@ -29,7 +30,7 @@ import SearchBoxOrama from "./SearchBoxOrama.vue";
       {
         menuOptions.map((option) => {
           return (
-            <a href={option.url} class="navbar-item f-600 tertiary-color ">
+            <a href={localizePath(option.url)} class="navbar-item f-600 tertiary-color ">
               {option.label}
             </a>
           );
