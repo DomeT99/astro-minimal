@@ -16,13 +16,18 @@
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/ph": "^1.2.2",
     "@iconify-json/ri": "^1.2.5",
-    "@orama/orama": "^3.1.6",
+    "@orama/orama": "^3.1.7",
     "astro": "^5.6.1",
     "astro-i18next": "^1.0.0-beta.21",
     "astro-icon": "^1.1.5",
     "astro-seo": "^0.8.4",
     "bulma": "^1.0.4",
+<<<<<<< snyk-upgrade-7e4362e2723464c388c7d0e194a19548
     "sass": "^1.88.0",
     "vue": "^3.5.14"
+=======
+    "sass": "^1.89.0",
+    "vue": "^3.5.13"
+>>>>>>> master
   }
 }
