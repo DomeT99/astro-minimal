@@ -6,23 +6,22 @@
     "dev": "astro dev --host",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "preview": "astro preview"
   },
   "dependencies": {
-    "@astrojs/vue": "^5.1.0",
-    "@iconify-json/fa6-brands": "^1.2.5",
+    "@astrojs/vue": "^5.1.1",
+    "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/gg": "^1.2.2",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/ph": "^1.2.2",
     "@iconify-json/ri": "^1.2.5",
-    "@orama/orama": "^3.1.7",
-    "astro": "^5.12.8",
+    "@orama/orama": "^3.1.14",
+    "astro": "^5.13.9",
     "astro-i18next": "^1.0.0-beta.21",
     "astro-icon": "^1.1.5",
     "astro-seo": "^0.8.4",
     "bulma": "^1.0.4",
-    "vue": "^3.5.14",
-    "sass": "^1.89.2"
+    "sass": "^1.93.0",
+    "vue": "^3.5.14"
   }
 }
